@@ -1,29 +1,14 @@
 <script lang="ts">
-	import { onMount } from 'svelte';
 	import About from '$lib/components/About.svelte';
 	import Contact from '$lib/components/Contact.svelte';
 	import Experience from '$lib/components/Experience.svelte';
 	import Hero from '$lib/components/Hero.svelte';
+	import ScrollAnimations from '$lib/components/ScrollAnimations.svelte';
 	import Work from '$lib/components/Work.svelte';
 	import Writing from '$lib/components/Writing.svelte';
-
-	onMount(() => {
-		const observer = new IntersectionObserver(
-			(entries) => {
-				entries.forEach((entry, index) => {
-					if (entry.isIntersecting) {
-						window.setTimeout(() => entry.target.classList.add('visible'), index * 80);
-					}
-				});
-			},
-			{ threshold: 0.1 }
-		);
-
-		document.querySelectorAll('.fade-up').forEach((element) => observer.observe(element));
-
-		return () => observer.disconnect();
-	});
 </script>
+
+<ScrollAnimations />
 
 <Hero />
 
@@ -66,19 +51,6 @@
 		color: var(--ink-3);
 		font-size: 0.68rem;
 		letter-spacing: 0.04em;
-	}
-
-	:global(.fade-up) {
-		opacity: 0;
-		transform: translateY(20px);
-		transition:
-			opacity 0.6s ease,
-			transform 0.6s ease;
-	}
-
-	:global(.fade-up.visible) {
-		opacity: 1;
-		transform: translateY(0);
 	}
 
 	@media (max-width: 768px) {
