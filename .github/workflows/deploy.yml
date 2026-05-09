@@ -29,10 +29,15 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: 22
-          cache: npm
+
+      - name: Set up Deno
+        uses: denoland/setup-deno@v2
+        with:
+          deno-version: v2.x
+          cache: true
 
       - name: Install dependencies
-        run: npm install
+        run: deno install
 
       - name: Validate project
         run: npm run check
