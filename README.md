@@ -39,4 +39,16 @@ npm run build
 
 You can preview the production build with `npm run preview`.
 
-> To deploy your app, you may need to install an [adapter](https://svelte.dev/docs/kit/adapters) for your target environment.
+The project is configured to produce a static build in `build/` for S3 + CloudFront deployments.
+
+## Deployment
+
+GitHub Actions deploys the site on every push to `main`.
+
+Configure these repository settings before enabling the workflow:
+
+- `secrets.AWS_ACCESS_KEY_ID`
+- `secrets.AWS_SECRET_ACCESS_KEY`
+- `vars.AWS_REGION`
+- `vars.AWS_S3_BUCKET`
+- `vars.CLOUDFRONT_DISTRIBUTION_ID`
