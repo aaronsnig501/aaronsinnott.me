@@ -1,77 +1,32 @@
 <script lang="ts">
 	import { resolve } from '$app/paths';
+	import { getI18nContext, translate, type TranslationKey } from '$lib/i18n';
+
+	const { language } = getI18nContext();
+
+	function t(key: TranslationKey) {
+		return translate($language, key);
+	}
 </script>
 
 <section id="writing" class="writing-section">
-	<div class="section-label" data-en="Writing" data-ga="Scríbhneoireacht">Writing</div>
+	<div class="section-label">{t('writing.label')}</div>
 	<div class="writing-inner">
-		<p
-			class="writing-lede"
-			data-en="&quot;Relearning Irish and falling down a rabbit hole of culture, identity, and colonialism along the way. I write the way I talk — honestly, and not always efficiently.&quot;"
-			data-ga="&quot;Gaeilge a athfhoghlaim agus ag titim síos poll coinín de chultúr, céannacht, agus coilíneachas ar an mbealach. Scríobhaim mar a labhraím — go hionraic, agus ní i gcónaí go héifeachtach.&quot;"
-		>
-			"Relearning Irish and falling down a rabbit hole of culture, identity, and colonialism along
-			the way. I write the way I talk — honestly, and not always efficiently."
-		</p>
-		<p
-			class="writing-copy"
-			data-en="The blog covers Irish language revival, colonial history, identity, and the practical mechanics of keeping a language alive — ROM hacking, subtitle translation, approaching local businesses, building community infrastructure."
-			data-ga="Clúdaíonn an blag athbheochan na Gaeilge, stair choilíneach, céannacht, agus meicníocht phraiticiúil coinneáil teanga beo — haiceáil ROM, aistriúchán fotheideal, gnólachtaí áitiúla a chur chuige, bonneagar pobail a thógáil."
-		>
-			The blog covers Irish language revival, colonial history, identity, and the practical
-			mechanics of keeping a language alive — ROM hacking, subtitle translation, approaching local
-			businesses, building community infrastructure.
-		</p>
+		<p class="writing-lede">{t('writing.lede')}</p>
+		<p class="writing-copy">{t('writing.copy')}</p>
 		<div class="writing-grid">
 			<article class="writing-card">
-				<div class="writing-card-label" data-en="Language & Education" data-ga="Teanga & Oideachas">
-					Language & Education
-				</div>
-				<h3
-					data-en="Why most Irish people don't speak Irish — and why it's not the teacher's fault"
-					data-ga="Cén fáth nach labhraíonn formhór na nÉireannach Gaeilge — agus cén fáth nach locht an mhúinteora é"
-				>
-					Why most Irish people don't speak Irish — and why it's not the teacher's fault
-				</h3>
-				<p
-					data-en="The exposure problem, the social problem, and why the real barrier was never in the classroom."
-					data-ga="An fhadhb nochta, an fhadhb shóisialta, agus cén fáth nach raibh an bac fíor riamh sa seomra ranga."
-				>
-					The exposure problem, the social problem, and why the real barrier was never in the
-					classroom.
-				</p>
+				<div class="writing-card-label">{t('writing.card1Label')}</div>
+				<h3>{t('writing.card1Title')}</h3>
+				<p>{t('writing.card1Copy')}</p>
 			</article>
 			<article class="writing-card">
-				<div
-					class="writing-card-label"
-					data-en="Revival in Practice"
-					data-ga="Athbheochan i nGníomh"
-				>
-					Revival in Practice
-				</div>
-				<h3
-					data-en="Translating Super Mario Bros. into Irish — what it takes and why it matters"
-					data-ga="Super Mario Bros. a aistriú go Gaeilge — cad a theastaíonn agus cén fáth a bhfuil sé tábhachtach"
-				>
-					Translating Super Mario Bros. into Irish — what it takes and why it matters
-				</h3>
-				<p
-					data-en="A deep dive into ROM hacking, character encoding, and language revival in unexpected places."
-					data-ga="Tumadh domhain isteach i haiceáil ROM, ionchódú carachtar, agus athbheochan teanga in áiteanna gan choinne."
-				>
-					A deep dive into ROM hacking, character encoding, and language revival in unexpected
-					places.
-				</p>
+				<div class="writing-card-label">{t('writing.card2Label')}</div>
+				<h3>{t('writing.card2Title')}</h3>
+				<p>{t('writing.card2Copy')}</p>
 			</article>
 		</div>
-		<a
-			href={resolve('/')}
-			class="btn btn-secondary writing-link"
-			data-en="Blog launching soon — follow on Substack →"
-			data-ga="Blag ag seoladh go luath — lean ar Substack →"
-		>
-			Blog launching soon — follow on Substack →
-		</a>
+		<a href={resolve('/')} class="btn btn-secondary writing-link">{t('writing.cta')}</a>
 	</div>
 </section>
 

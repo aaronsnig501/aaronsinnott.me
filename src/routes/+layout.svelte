@@ -1,15 +1,18 @@
 <script lang="ts">
-	import { tick } from 'svelte';
+	import { writable } from 'svelte/store';
 	import Nav from '$lib/components/Nav.svelte';
 	import favicon from '$lib/assets/favicon.svg';
+	import { setI18nContext, translate, type Language, type TranslationKey } from '$lib/i18n';
 
 	let { children } = $props();
 
-	type Language = 'ga' | 'en';
-
 	const storageKey = 'preferred-language';
+	const languageStore = writable<Language | null>(null);
+
 	let language = $state<Language | null>(null);
 	let isReady = $state(false);
+
+	setI18nContext({ language: languageStore });
 
 	$effect(() => {
 		const storedLanguage = window.localStorage.getItem(storageKey);
@@ -24,10 +27,8 @@
 	$effect(() => {
 		if (!language) return;
 
-		const selectedLanguage = language;
-
-		document.documentElement.lang = selectedLanguage;
-		void tick().then(() => applyLanguage(selectedLanguage));
+		languageStore.set(language);
+		document.documentElement.lang = language;
 	});
 
 	function chooseLanguage(selectedLanguage: Language) {
@@ -39,14 +40,8 @@
 		chooseLanguage(language === 'ga' ? 'en' : 'ga');
 	}
 
-	function applyLanguage(selectedLanguage: Language) {
-		document.querySelectorAll<HTMLElement>('[data-en][data-ga]').forEach((element) => {
-			const translation = element.dataset[selectedLanguage];
-
-			if (translation) {
-				element.innerHTML = translation;
-			}
-		});
+	function t(key: TranslationKey) {
+		return translate(language, key);
 	}
 </script>
 
@@ -70,25 +65,23 @@
 	</div>
 {:else if isReady}
 	<div id="lang-chooser" aria-labelledby="language-title" aria-modal="true" role="dialog">
-		<span class="chooser-logo">aaronsinnott.me</span>
+		<span class="chooser-logo">{t('languageChooser.logo')}</span>
 		<h1 id="language-title">
-			Conas ba mhaith leat an suíomh a léamh?<br /><em>How would you like to read the site?</em>
+			{t('languageChooser.promptGa')}<br /><em>{t('languageChooser.promptEn')}</em>
 		</h1>
 		<div class="lang-options">
 			<button class="lang-btn" type="button" onclick={() => chooseLanguage('ga')}>
 				<span class="flag" aria-hidden="true">🇮🇪</span>
-				<span class="lang-name">Gaeilge</span>
-				<span class="lang-native">As Gaeilge</span>
+				<span class="lang-name">{t('languageChooser.gaeilge')}</span>
+				<span class="lang-native">{t('languageChooser.asGaeilge')}</span>
 			</button>
 			<button class="lang-btn" type="button" onclick={() => chooseLanguage('en')}>
 				<span class="flag" aria-hidden="true">🌐</span>
-				<span class="lang-name">English</span>
-				<span class="lang-native">In English</span>
+				<span class="lang-name">{t('languageChooser.english')}</span>
+				<span class="lang-native">{t('languageChooser.inEnglish')}</span>
 			</button>
 		</div>
-		<span class="chooser-footnote">
-			Is féidir leat an teanga a athrú am ar bith · You can change language at any time
-		</span>
+		<span class="chooser-footnote">{t('languageChooser.footnote')}</span>
 	</div>
 {/if}
 

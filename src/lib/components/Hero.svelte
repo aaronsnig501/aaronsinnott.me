@@ -1,62 +1,36 @@
 <script lang="ts">
 	import { asset } from '$app/paths';
+	import { getI18nContext, translate, type TranslationKey } from '$lib/i18n';
+
+	const { language } = getI18nContext();
+
+	function t(key: TranslationKey) {
+		return translate($language, key);
+	}
 </script>
 
 <section class="hero" aria-labelledby="hero-title">
 	<div class="hero-content">
-		<p
-			class="hero-eyebrow hero-reveal"
-			data-en="Senior Software Developer · Loch Garman, Éire"
-			data-ga="Forbróir Bogearraí Sinsearach · Loch Garman, Éire"
-		>
-			Senior Software Developer · Loch Garman, Éire
-		</p>
-		<h1
-			id="hero-title"
-			class="hero-reveal"
-			data-en="Building things that <em>persist</em>,<br>for languages that should too."
-			data-ga="Ag tógáil rudaí a <em>mhaireann</em>,<br>do theangacha ba chóir a mhaireachtáil freisin."
-		>
-			Building things that <em>persist</em>,<br />for languages that should too.
+		<p class="hero-eyebrow hero-reveal">{t('hero.eyebrow')}</p>
+		<h1 id="hero-title" class="hero-reveal">
+			{t('hero.titleStart')} <em>{t('hero.titleEmphasis')}</em>,<br />{t('hero.titleEnd')}
 		</h1>
-		<p
-			class="hero-sub hero-reveal"
-			data-en="I work on high-stakes distributed systems by day and build infrastructure for language revival by night. Technical depth, honest engineering, and a genuine belief that everyday courage — misneach — is how culture survives."
-			data-ga="Oibrím ar chórais dháilte ardghéire de lá agus tógaim bonneagar don athbheochan teanga san oíche. Doimhneacht theicniúil, innealtóireacht ionraic, agus creideamh fírinneach gur slí mhaireachtála cultúir é misneach laethúil."
-		>
-			I work on high-stakes distributed systems by day and build infrastructure for language revival
-			by night. Technical depth, honest engineering, and a genuine belief that everyday courage —
-			misneach — is how culture survives.
-		</p>
+		<p class="hero-sub hero-reveal">{t('hero.subheading')}</p>
 		<div class="hero-tags hero-reveal">
 			<span class="tag tag-green">Python · Java · Distributed Systems</span>
 			<span class="tag tag-green">Kafka · AWS · NestJS · SvelteKit</span>
-			<span
-				class="tag tag-amber"
-				data-en="Irish · Portuguese · English"
-				data-ga="Gaeilge · Portugáilis · Béarla"
-			>
-				Irish · Portuguese · English
-			</span>
-			<span
-				class="tag tag-neutral"
-				data-en="Loch Garman → Anywhere"
-				data-ga="Loch Garman → Áit ar bith"
-			>
-				Loch Garman → Anywhere
-			</span>
+			<span class="tag tag-amber">{t('hero.languageTag')}</span>
+			<span class="tag tag-neutral">{t('hero.locationTag')}</span>
 		</div>
 		<div class="hero-cta hero-reveal">
-			<a href="#work" class="btn btn-primary" data-en="See my work →" data-ga="Féach ar m'obair →"
-				>See my work →</a
-			>
+			<a href="#work" class="btn btn-primary">{t('hero.workCta')}</a>
 			<a href={asset('/aaron_sinnott_cv_ga.html')} class="btn btn-secondary">CV as Gaeilge 🇮🇪</a>
 			<a href={asset('/aaron_sinnott_cv.html')} class="btn btn-secondary">CV in English 🌐</a>
 		</div>
 	</div>
 	<div class="scroll-hint hero-reveal">
 		<span class="scroll-line"></span>
-		<span data-en="Scroll" data-ga="Scrollaigh">Scroll</span>
+		<span>{t('hero.scroll')}</span>
 	</div>
 </section>
 

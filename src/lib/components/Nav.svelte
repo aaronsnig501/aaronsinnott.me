@@ -1,8 +1,7 @@
 <script lang="ts">
 	import { onMount } from 'svelte';
 	import { resolve } from '$app/paths';
-
-	type Language = 'ga' | 'en';
+	import { translate, type Language, type TranslationKey } from '$lib/i18n';
 
 	let {
 		language,
@@ -11,11 +10,6 @@
 		language: Language;
 		onToggleLanguage: () => void;
 	} = $props();
-
-	const languageNames: Record<Language, string> = {
-		ga: 'Gaeilge',
-		en: 'English'
-	};
 
 	let hasScrolled = $state(false);
 	let isMenuOpen = $state(false);
@@ -34,31 +28,31 @@
 	function closeMenu() {
 		isMenuOpen = false;
 	}
+
+	function t(key: TranslationKey) {
+		return translate(language, key);
+	}
 </script>
 
 <nav class:scrolled={hasScrolled} class="site-nav" aria-label="Primary navigation">
 	<a href={resolve('/')} class="nav-logo">aaronsinnott.me</a>
 	<div class="nav-right">
 		<ul class:open={isMenuOpen} class="nav-links" id="primary-nav-links">
-			<li><a href="#about" onclick={closeMenu} data-en="About" data-ga="Fúm">About</a></li>
-			<li><a href="#work" onclick={closeMenu} data-en="Work" data-ga="Obair">Work</a></li>
+			<li><a href="#about" onclick={closeMenu}>{t('nav.about')}</a></li>
+			<li><a href="#work" onclick={closeMenu}>{t('nav.work')}</a></li>
 			<li>
-				<a href="#writing" onclick={closeMenu} data-en="Writing" data-ga="Scríbhneoireacht"
-					>Writing</a
-				>
+				<a href="#writing" onclick={closeMenu}>{t('nav.writing')}</a>
 			</li>
 			<li>
-				<a href="#experience" onclick={closeMenu} data-en="Experience" data-ga="Taithí"
-					>Experience</a
-				>
+				<a href="#experience" onclick={closeMenu}>{t('nav.experience')}</a>
 			</li>
 			<li>
-				<a href="#contact" onclick={closeMenu} data-en="Contact" data-ga="Teagmháil">Contact</a>
+				<a href="#contact" onclick={closeMenu}>{t('nav.contact')}</a>
 			</li>
 		</ul>
 		<button class="lang-toggle" type="button" onclick={onToggleLanguage}>
 			<span aria-hidden="true">{language === 'ga' ? '🌐' : '🇮🇪'}</span>
-			<span>{language === 'ga' ? languageNames.en : languageNames.ga}</span>
+			<span>{language === 'ga' ? t('language.en') : t('language.ga')}</span>
 		</button>
 		<button
 			class="menu-toggle"
