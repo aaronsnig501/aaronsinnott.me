@@ -1,111 +1,47 @@
+<script lang="ts">
+	import { getI18nContext, translate, type TranslationKey } from '$lib/i18n';
+
+	const { language } = getI18nContext();
+
+	function t(key: TranslationKey) {
+		return translate($language, key);
+	}
+</script>
+
 <section id="about" class="about-section">
-	<div class="section-label" data-en="About" data-ga="Fúm">About</div>
+	<div class="section-label">{t('about.label')}</div>
 	<div class="about-grid">
 		<div class="about-text fade-up">
-			<h2
-				data-en="Developer, advocate, and builder of things that last."
-				data-ga="Forbróir, abhcóide, agus tógálaí rudaí a mhaireann."
-			>
-				Developer, advocate, and builder of things that last.
-			</h2>
-			<p
-				data-en="I've spent a decade building software that operates at scale — real-time pricing systems, regulatory infrastructure across multiple jurisdictions, and distributed architectures that have to be right."
-				data-ga="Chaith mé deich mbliana ag tógáil bogearraí ag scála — córais praghsála fíor-ama, bonneagar rialúcháin trasna dlínsí éagsúla, agus ailtireachtaí dáilte nach mór a bheith ceart."
-			>
-				I've spent a decade building software that operates at scale — real-time pricing systems,
-				regulatory infrastructure across multiple jurisdictions, and distributed architectures that
-				have to be right.
-			</p>
-			<p
-				data-en="Outside of work, I'm building infrastructure for language revival. Not language learning — revival. The distinction matters. Misneach is a platform to make everyday Irish use in commercial spaces socially safe. The ROM hacks show that revival can happen anywhere, even in a 1985 Nintendo cartridge."
-				data-ga="Lasmuigh den obair, tógaim bonneagar d'athbheochan teanga. Ní foghlaim teanga é — athbheochan. Tá an difríocht tábhachtach. Is ardán é Misneach chun úsáid laethúil na Gaeilge in áiteanna tráchtála a dhéanamh sábháilte go sóisialta."
-			>
-				Outside of work, I'm building infrastructure for language revival. Not language learning —
-				revival. The distinction matters. Misneach is a platform to make everyday Irish use in
-				commercial spaces socially safe. The ROM hacks show that revival can happen anywhere, even
-				in a 1985 Nintendo cartridge.
-			</p>
-			<p
-				data-en="I believe good engineering culture requires someone willing to name the problems others are thinking but not saying. In practice that means retrospectives, implementation reviews, and knowing which battles are worth having and which forum to have them in."
-				data-ga="Creidim go n-éilíonn cultúr maith innealtóireachta duine atá sásta ainm a thabhairt ar na fadhbanna atá á gceapadh ag daoine eile ach nach bhfuil á rá. I ngníomh, ciallaíonn sin athbhreithnithe agus fios a bheith agat cén fóram atá ceart."
-			>
-				I believe good engineering culture requires someone willing to name the problems others are
-				thinking but not saying. In practice that means retrospectives, implementation reviews, and
-				knowing which battles are worth having and which forum to have them in.
-			</p>
-			<p
-				data-en="I'm looking for roles where I can drive technical direction as well as deliver, ideally somewhere that values both depth and purpose."
-				data-ga="Táim ag lorg ról inar féidir liom treo teicniúil a thiomáint chomh maith le seachadadh, go hidéalach in áit a luann doimhneacht agus cuspóir araon."
-			>
-				I'm looking for roles where I can drive technical direction as well as deliver, ideally
-				somewhere that values both depth and purpose.
-			</p>
+			<h2>{t('about.heading')}</h2>
+			<p>{t('about.bio1')}</p>
+			<p>{t('about.bio2')}</p>
+			<p>{t('about.bio3')}</p>
+			<p>{t('about.bio4')}</p>
 		</div>
 		<div class="about-facts fade-up">
 			<div class="fact">
-				<div class="fact-label" data-en="Currently" data-ga="Faoi láthair">Currently</div>
-				<div
-					class="fact-value"
-					data-en="Senior Software Developer at 888Spectate (888 William Hill)"
-					data-ga="Forbróir Bogearraí Sinsearach ag 888Spectate (888 William Hill)"
-				>
-					Senior Software Developer at 888Spectate (888 William Hill)
-				</div>
+				<div class="fact-label">{t('about.currentlyLabel')}</div>
+				<div class="fact-value">{t('about.currentlyValue')}</div>
 			</div>
 			<div class="fact">
-				<div class="fact-label" data-en="Also building" data-ga="Ag tógáil freisin">
-					Also building
-				</div>
-				<div
-					class="fact-value"
-					data-en="Misneach — Irish Language Normalisation Platform"
-					data-ga="Misneach — Ardán Normalúcháin na Gaeilge"
-				>
-					Misneach — Irish Language Normalisation Platform
-				</div>
+				<div class="fact-label">{t('about.alsoBuildingLabel')}</div>
+				<div class="fact-value">{t('about.alsoBuildingValue')}</div>
 			</div>
 			<div class="fact">
-				<div class="fact-label" data-en="Building toward" data-ga="Ag tógáil i dtreo">
-					Building toward
-				</div>
-				<div
-					class="fact-value"
-					data-en="An open methodology for language revival — ROM hacks, subtitle translation, community tooling, Gaeltacht infrastructure. Replicable by any language community."
-					data-ga="Modheolaíocht oscailte d'athbheochan teanga — haiceanna ROM, aistriúchán fotheideal, uirlisí pobail, bonneagar Gaeltachta. Inatáirgthe ag aon phobal teanga."
-				>
-					An open methodology for language revival — ROM hacks, subtitle translation, community
-					tooling, Gaeltacht infrastructure. Replicable by any language community.
-				</div>
+				<div class="fact-label">{t('about.buildingTowardLabel')}</div>
+				<div class="fact-value">{t('about.buildingTowardValue')}</div>
 			</div>
 			<div class="fact">
-				<div class="fact-label" data-en="Studying" data-ga="Ag staidéar">Studying</div>
-				<div
-					class="fact-value"
-					data-en="ILM Level 4 Leadership & Management — In Progress. Currently: Managing Stress & Conflict."
-					data-ga="ILM Leibhéal 4 Ceannaireacht & Bainistíocht — Á dhéanamh faoi láthair. Faoi láthair: Strus & Coinbhleacht a Bhainistiú."
-				>
-					ILM Level 4 Leadership & Management — In Progress. Currently: Managing Stress & Conflict.
-				</div>
+				<div class="fact-label">{t('about.studyingLabel')}</div>
+				<div class="fact-value">{t('about.studyingValue')}</div>
 			</div>
 			<div class="fact">
-				<div class="fact-label" data-en="Languages" data-ga="Teangacha">Languages</div>
+				<div class="fact-label">{t('about.languagesLabel')}</div>
 				<div class="fact-value">
 					<div class="lang-row">
-						<span class="lang-pill"
-							>🇮🇪 <span data-en="Irish (Intermediate)" data-ga="Gaeilge (Meánleibhéal)"
-								>Irish (Intermediate)</span
-							></span
-						>
-						<span class="lang-pill"
-							>🇧🇷 <span data-en="Portuguese (Intermediate)" data-ga="Portugáilis (Meánleibhéal)"
-								>Portuguese (Intermediate)</span
-							></span
-						>
-						<span class="lang-pill"
-							>🇬🇧 <span data-en="English (Native)" data-ga="Béarla (Dúchasach)"
-								>English (Native)</span
-							></span
-						>
+						<span class="lang-pill">🇮🇪 <span>{t('about.irish')}</span></span>
+						<span class="lang-pill">🇧🇷 <span>{t('about.portuguese')}</span></span>
+						<span class="lang-pill">🇬🇧 <span>{t('about.english')}</span></span>
 					</div>
 				</div>
 			</div>

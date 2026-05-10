@@ -1,31 +1,23 @@
+<script lang="ts">
+	import { getI18nContext, translate, type TranslationKey } from '$lib/i18n';
+
+	const { language } = getI18nContext();
+
+	function t(key: TranslationKey) {
+		return translate($language, key);
+	}
+</script>
+
 <section id="work" class="work-section">
-	<div class="section-label" data-en="Selected Work" data-ga="Obair Roghnaithe">Selected Work</div>
+	<div class="section-label">{t('work.label')}</div>
 	<div class="projects-grid">
 		<article class="project-card featured fade-up">
-			<div
-				class="project-eyebrow"
-				data-en="Founder & Solo Engineer · 2024–Present"
-				data-ga="Bunaitheoir & Innealtóir Aonair · 2024–i láthair"
-			>
-				Founder & Solo Engineer · 2024–Present
-			</div>
+			<div class="project-eyebrow">{t('work.misneachEyebrow')}</div>
 			<div class="project-status">
-				<span class="status-dot"></span><span
-					data-en="Live in production"
-					data-ga="Beo i dtáirgeadh">Live in production</span
-				>
+				<span class="status-dot"></span><span>{t('work.liveProduction')}</span>
 			</div>
 			<h2 class="project-title">Misneach</h2>
-			<p
-				class="project-desc"
-				data-en="An Irish language normalisation platform built to make everyday use of Irish in commercial spaces socially safe and practically supported. Window stickers, staff badges, campaign tooling, behavioural analytics, and a mobile phrase bank — all built and deployed solo on AWS."
-				data-ga="Ardán normalúcháin Gaeilge tógtha chun úsáid laethúil na Gaeilge in áiteanna tráchtála a dhéanamh sábháilte go sóisialta agus tacaithe go praiticiúil. Greamáin fuinneoige, suaitheantas foirne, uirlisí feachtais, anailísíocht iompraíochta, agus banc frásaí móibíleach — iomlán tógtha agus imscartha go haonair ar AWS."
-			>
-				An Irish language normalisation platform built to make everyday use of Irish in commercial
-				spaces socially safe and practically supported. Window stickers, staff badges, campaign
-				tooling, behavioural analytics, and a mobile phrase bank — all built and deployed solo on
-				AWS.
-			</p>
+			<p class="project-desc">{t('work.misneachDescription')}</p>
 			<div class="project-tech">
 				<span>NestJS Microservices</span><span>SvelteKit</span><span>Capacitor</span><span
 					>AWS EC2</span
@@ -34,29 +26,12 @@
 		</article>
 
 		<article class="project-card fade-up">
-			<div
-				class="project-eyebrow"
-				data-en="Personal Project · Live"
-				data-ga="Tionscadal Pearsanta · Beo"
-			>
-				Personal Project · Live
-			</div>
+			<div class="project-eyebrow">{t('work.emuhubEyebrow')}</div>
 			<div class="project-status">
-				<span class="status-dot"></span><span
-					data-en="Live on GitHub Pages"
-					data-ga="Beo ar GitHub Pages">Live on GitHub Pages</span
-				>
+				<span class="status-dot"></span><span>{t('work.liveGithubPages')}</span>
 			</div>
 			<h3 class="project-title">EMU·HUB</h3>
-			<p
-				class="project-desc"
-				data-en="A browser-based multi-system emulator platform built from first principles — no off-the-shelf emulation libraries. Ships a fully playable CHIP-8 core with a multi-route SvelteKit architecture designed for future systems."
-				data-ga="Ardán aithriseora il-chórais bunaithe ar bhrabhsálaí ó phrionsabail bhunúsacha — gan leabharlanna aithriseoireachta réamhdhéanta. Seolann croí CHIP-8 lán-imeartha le hailtireacht SvelteKit il-bhealach deartha do chórais sa todhchaí."
-			>
-				A browser-based multi-system emulator platform built from first principles — no
-				off-the-shelf emulation libraries. Ships a fully playable CHIP-8 core with a multi-route
-				SvelteKit architecture designed for future systems.
-			</p>
+			<p class="project-desc">{t('work.emuhubDescription')}</p>
 			<div class="project-tech">
 				<span>SvelteKit</span><span>TypeScript</span><span>Canvas API</span><span>Docker</span><span
 					>GitHub Pages</span
@@ -65,29 +40,12 @@
 		</article>
 
 		<article class="project-card fade-up">
-			<div
-				class="project-eyebrow"
-				data-en="Open Source · In Progress"
-				data-ga="Foinse Oscailte · Ar Siúl"
-			>
-				Open Source · In Progress
-			</div>
+			<div class="project-eyebrow">{t('work.consoleEyebrow')}</div>
 			<div class="project-status">
-				<span class="status-dot"></span><span
-					data-en="Spyro the Dragon — 74% complete"
-					data-ga="Spyro the Dragon — 74% críochnaithe">Spyro the Dragon — 74% complete</span
-				>
+				<span class="status-dot"></span><span>{t('work.consoleStatus')}</span>
 			</div>
 			<h3 class="project-title">Gaeilge sa Chonsol</h3>
-			<p
-				class="project-desc"
-				data-en="An open source Irish language localisation platform for retro games. A Python CLI extracts fixed-budget string tables, validates byte-length constraints, patches translated text, and generates BPS artifacts."
-				data-ga="Ardán logánaithe foinse oscailte Gaeilge do chluichí atróshamhla. Eastóscann CLI Python táblaí teaghrán buiséad-seasta, bailíochtaíonn srianta fad beart, paistíonn téacs aistrithe, agus gineann déantáin BPS."
-			>
-				An open source Irish language localisation platform for retro games. A Python CLI extracts
-				fixed-budget string tables, validates byte-length constraints, patches translated text, and
-				generates BPS artifacts.
-			</p>
+			<p class="project-desc">{t('work.consoleDescription')}</p>
 			<div class="project-tech">
 				<span>Python</span><span>SvelteKit</span><span>Supabase</span><span>GitHub Actions</span
 				><span>BPS Patching</span>

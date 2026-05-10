@@ -1,20 +1,18 @@
+<script lang="ts">
+	import { getI18nContext, translate, type TranslationKey } from '$lib/i18n';
+
+	const { language } = getI18nContext();
+
+	function t(key: TranslationKey) {
+		return translate($language, key);
+	}
+</script>
+
 <section id="contact" class="contact-section">
-	<div class="section-label" data-en="Contact" data-ga="Teagmháil">Contact</div>
+	<div class="section-label">{t('contact.label')}</div>
 	<div class="contact-inner fade-up">
-		<h2
-			data-en="Let's build something <em>worth building</em>."
-			data-ga="Tógaimis rud éigin <em>atá fiú a thógáil</em>."
-		>
-			Let's build something <em>worth building</em>.
-		</h2>
-		<p
-			data-en="I'm open to senior and staff-level engineering roles, particularly in distributed systems, platform engineering, or anywhere that values technical depth. Based in Loch Garman — happy to discuss remote or hybrid."
-			data-ga="Táim oscailte do róil innealtóireachta sinsearacha agus ar leibhéal foirne, go háirithe i gcórais dháilte, innealtóireacht ardáin, nó áit ar bith a luann doimhneacht theicniúil. Bunaithe i Loch Garman — sásta cianobair nó hibrideach a phlé."
-		>
-			I'm open to senior and staff-level engineering roles, particularly in distributed systems,
-			platform engineering, or anywhere that values technical depth. Based in Loch Garman — happy to
-			discuss remote or hybrid.
-		</p>
+		<h2>{t('contact.headingStart')} <em>{t('contact.headingEmphasis')}</em>.</h2>
+		<p>{t('contact.copy')}</p>
 		<div class="contact-links">
 			<a href="mailto:aaronsnig@gmail.com" class="contact-link">
 				<span class="contact-link-left">
