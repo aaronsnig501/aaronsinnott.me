@@ -46,7 +46,7 @@ export const ga: Record<keyof typeof en, string> = {
 		"Modheolaíocht oscailte d'athbheochan teanga — haiceanna ROM, aistriúchán fotheideal, uirlisí pobail, bonneagar Gaeltachta. Inatáirgthe ag aon phobal teanga.",
 	'about.studyingLabel': 'Ag staidéar',
 	'about.studyingValue':
-		'ILM Leibhéal 4 Ceannaireacht & Bainistíocht — Á dhéanamh faoi láthair. Faoi láthair: Strus & Coinbhleacht a Bhainistiú.',
+		'ILM Leibhéal 4 Ceannaireacht & Bainistíocht — Á dhéanamh faoi láthair. 100/100 trasna trí mhodúl críochnaithe: Stíleanna Ceannaireachta, Réiteach Fadhbanna, agus Strus & Coinbhleacht a Bhainistiú. Faoi láthair: Athrú a Bhainistiú agus a Chur i bhFeidhm.',
 	'about.languagesLabel': 'Teangacha',
 	'about.irish': 'Gaeilge (Meánleibhéal)',
 	'about.portuguese': 'Portugáilis (Meánleibhéal)',
