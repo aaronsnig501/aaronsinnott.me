@@ -44,7 +44,7 @@ export const en = {
 		'An open methodology for language revival — ROM hacks, subtitle translation, community tooling, Gaeltacht infrastructure. Replicable by any language community.',
 	'about.studyingLabel': 'Studying',
 	'about.studyingValue':
-		'ILM Level 4 Leadership & Management — In Progress. Currently: Managing Stress & Conflict.',
+		'ILM Level 4 Leadership & Management — In Progress. 100/100 across three completed modules: Leadership Styles, Problem Solving, and Managing Stress & Conflict. Currently: Managing and Implementing Change.',
 	'about.languagesLabel': 'Languages',
 	'about.irish': 'Irish (Intermediate)',
 	'about.portuguese': 'Portuguese (Intermediate)',
