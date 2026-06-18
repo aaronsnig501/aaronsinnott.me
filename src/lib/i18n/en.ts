@@ -53,10 +53,14 @@ export const en = {
 	'work.liveProduction': 'Live in production',
 	'work.misneachDescription':
 		'An Irish language normalisation platform built to make everyday use of Irish in commercial spaces socially safe and practically supported. Window stickers, staff badges, campaign tooling, behavioural analytics, and a mobile phrase bank — all built and deployed solo on AWS.',
-	'work.emuhubEyebrow': 'Personal Project · Live',
-	'work.liveGithubPages': 'Live on GitHub Pages',
+	'work.emuhubEyebrow': 'solo developer · in progress',
+	'work.liveGithubPages': 'live · github pages',
 	'work.emuhubDescription':
-		'A browser-based multi-system emulator platform built from first principles — no off-the-shelf emulation libraries. Ships a fully playable CHIP-8 core with a multi-route SvelteKit architecture designed for future systems.',
+		'Browser-based multi-system emulator built from first principles. Fully playable CHIP-8 core (all 35 opcodes, custom UI, save-state tooling, ~600hz game loop), multi-route SvelteKit architecture for future systems. Users supply their own ROMs. Self-hosted Docker mode for private ROM library management.',
+	'work.ceangalEyebrow': 'solo developer · 2025 — present',
+	'work.ceangalStatus': 'live · ceangal.app',
+	'work.ceangalDescription':
+		'Irish language word game based on the NYT Connections format — 16 words, four hidden groups, four attempts. Irish-forward by default with traditional orthography applied at runtime. Live on the web; native iOS and Android builds in progress.',
 	'work.consoleEyebrow': 'Open Source · In Progress',
 	'work.consoleStatus': 'Spyro the Dragon — 74% complete',
 	'work.consoleDescription':

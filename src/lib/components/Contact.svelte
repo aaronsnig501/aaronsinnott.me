@@ -1,5 +1,6 @@
 <script lang="ts">
 	import { getI18nContext, translate, type TranslationKey } from '$lib/i18n';
+	import SectionLabel from './SectionLabel.svelte';
 
 	const { language } = getI18nContext();
 
@@ -9,7 +10,7 @@
 </script>
 
 <section id="contact" class="contact-section">
-	<div class="section-label">{t('contact.label')}</div>
+	<SectionLabel>{t('contact.label')}</SectionLabel>
 	<div class="contact-inner fade-up">
 		<h2>{t('contact.headingStart')} <em>{t('contact.headingEmphasis')}</em>.</h2>
 		<p>{t('contact.copy')}</p>
@@ -58,36 +59,14 @@
 
 <style>
 	.contact-section {
-		padding: 100px 48px;
+		margin: 0 auto;
+		max-width: 900px;
+		padding: 80px 48px;
 	}
 
-	.section-label,
 	.contact-link-sub {
 		font-family: 'Fira Code', monospace;
 		font-variant-ligatures: contextual common-ligatures;
-	}
-
-	.section-label {
-		align-items: center;
-		color: var(--accent-green);
-		display: flex;
-		font-size: 0.68rem;
-		gap: 14px;
-		letter-spacing: 0.18em;
-		margin-bottom: 48px;
-		text-transform: lowercase;
-	}
-
-	.section-label::before {
-		content: '#';
-	}
-
-	.section-label::after {
-		background: var(--rule);
-		content: '';
-		flex: 1;
-		height: 0.5px;
-		max-width: 80px;
 	}
 
 	.contact-inner {
@@ -122,22 +101,18 @@
 
 	.contact-link {
 		align-items: center;
-		background: var(--bg-3);
-		border: 0.5px solid var(--rule);
-		border-radius: 3px;
+		border-bottom: 0.5px solid var(--rule);
 		display: flex;
 		font-family: 'Fira Code', monospace;
 		font-variant-ligatures: contextual common-ligatures;
 		justify-content: space-between;
-		padding: 14px 18px;
+		padding: 12px 0;
 		text-decoration: none;
 		transition:
-			background 0.2s,
 			border-color 0.2s;
 	}
 
 	.contact-link:hover {
-		background: rgba(158, 206, 106, 0.08);
 		border-color: rgba(158, 206, 106, 0.3);
 	}
 

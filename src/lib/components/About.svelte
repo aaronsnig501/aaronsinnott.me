@@ -1,5 +1,6 @@
 <script lang="ts">
 	import { getI18nContext, translate, type TranslationKey } from '$lib/i18n';
+	import SectionLabel from './SectionLabel.svelte';
 
 	const { language } = getI18nContext();
 
@@ -9,7 +10,7 @@
 </script>
 
 <section id="about" class="about-section">
-	<div class="section-label">{t('about.label')}</div>
+	<SectionLabel>{t('about.label')}</SectionLabel>
 	<div class="about-grid">
 		<div class="about-text fade-up">
 			<h2>{t('about.heading')}</h2>
@@ -51,39 +52,15 @@
 
 <style>
 	.about-section {
-		background: var(--bg-2);
-		border-bottom: 0.5px solid var(--rule);
 		border-top: 0.5px solid var(--rule);
-		padding: 100px 48px;
+		margin: 0 auto;
+		max-width: 900px;
+		padding: 80px 48px;
 	}
 
-	.section-label,
 	.fact-label {
 		font-family: 'Fira Code', monospace;
 		font-variant-ligatures: contextual common-ligatures;
-	}
-
-	.section-label {
-		align-items: center;
-		color: var(--accent-green);
-		display: flex;
-		font-size: 0.68rem;
-		gap: 14px;
-		letter-spacing: 0.18em;
-		margin-bottom: 48px;
-		text-transform: lowercase;
-	}
-
-	.section-label::before {
-		content: '#';
-	}
-
-	.section-label::after {
-		background: var(--rule);
-		content: '';
-		flex: 1;
-		height: 0.5px;
-		max-width: 80px;
 	}
 
 	.about-grid {
@@ -143,14 +120,10 @@
 
 	.lang-pill {
 		align-items: center;
-		background: var(--bg);
-		border: 0.5px solid var(--rule);
-		border-radius: 100px;
 		color: var(--ink-2);
 		display: flex;
 		font-size: 0.82rem;
 		gap: 6px;
-		padding: 6px 14px;
 	}
 
 	@media (max-width: 768px) {

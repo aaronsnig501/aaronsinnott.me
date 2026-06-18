@@ -44,6 +44,8 @@
 		flex-wrap: wrap;
 		gap: 12px;
 		justify-content: space-between;
+		margin: 0 auto;
+		max-width: 900px;
 		padding: 28px 48px;
 	}
 

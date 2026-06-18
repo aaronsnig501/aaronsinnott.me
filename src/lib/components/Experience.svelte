@@ -1,5 +1,6 @@
 <script lang="ts">
 	import { getI18nContext, translate, type TranslationKey } from '$lib/i18n';
+	import SectionLabel from './SectionLabel.svelte';
 
 	const { language } = getI18nContext();
 
@@ -9,7 +10,7 @@
 </script>
 
 <section id="experience" class="experience-section">
-	<div class="section-label">{t('experience.label')}</div>
+	<SectionLabel>{t('experience.label')}</SectionLabel>
 	<div class="timeline">
 		<div class="timeline-item fade-up">
 			<div class="timeline-date">{t('experience.seniorDate')}</div>
@@ -51,39 +52,14 @@
 
 <style>
 	.experience-section {
-		background: var(--bg-2);
-		border-bottom: 0.5px solid var(--rule);
-		border-top: 0.5px solid var(--rule);
-		padding: 100px 48px;
+		margin: 0 auto;
+		max-width: 900px;
+		padding: 80px 48px;
 	}
 
-	.section-label,
 	.timeline-date {
 		font-family: 'Fira Code', monospace;
 		font-variant-ligatures: contextual common-ligatures;
-	}
-
-	.section-label {
-		align-items: center;
-		color: var(--accent-green);
-		display: flex;
-		font-size: 0.68rem;
-		gap: 14px;
-		letter-spacing: 0.18em;
-		margin-bottom: 48px;
-		text-transform: lowercase;
-	}
-
-	.section-label::before {
-		content: '#';
-	}
-
-	.section-label::after {
-		background: var(--rule);
-		content: '';
-		flex: 1;
-		height: 0.5px;
-		max-width: 80px;
 	}
 
 	.timeline {

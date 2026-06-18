@@ -55,10 +55,14 @@ export const ga: Record<keyof typeof en, string> = {
 	'work.liveProduction': 'Beo i dtáirgeadh',
 	'work.misneachDescription':
 		'Ardán normalúcháin Gaeilge tógtha chun úsáid laethúil na Gaeilge in áiteanna tráchtála a dhéanamh sábháilte go sóisialta agus tacaithe go praiticiúil. Greamáin fuinneoige, suaitheantas foirne, uirlisí feachtais, anailísíocht iompraíochta, agus banc frásaí móibíleach — iomlán tógtha agus imscartha go haonair ar AWS.',
-	'work.emuhubEyebrow': 'Tionscadal Pearsanta · Beo',
-	'work.liveGithubPages': 'Beo ar GitHub Pages',
+	'work.emuhubEyebrow': 'forbróir aonair · ar siúl',
+	'work.liveGithubPages': 'beo · github pages',
 	'work.emuhubDescription':
-		'Ardán aithriseora il-chórais bunaithe ar bhrabhsálaí ó phrionsabail bhunúsacha — gan leabharlanna aithriseoireachta réamhdhéanta. Seolann croí CHIP-8 lán-imeartha le hailtireacht SvelteKit il-bhealach deartha do chórais sa todhchaí.',
+		'Ardán aithriseora il-chórais sa bhrabhsálaí, tógtha ó phrionsabail bhunúsacha. Croí CHIP-8 lán-imeartha (gach 35 opcód, comhéadan saincheaptha, uirlisí save-state, lúb cluiche ~600hz), agus ailtireacht SvelteKit il-bhealaigh do chórais amach anseo. Soláthraíonn úsáideoirí a ROManna féin. Tá mód Docker féin-óstáilte ann do bhainistiú leabharlann ROM príobháideach.',
+	'work.ceangalEyebrow': 'forbróir aonair · 2025 — i láthair',
+	'work.ceangalStatus': 'beo · ceangal.app',
+	'work.ceangalDescription':
+		'Cluiche focal Gaeilge bunaithe ar fhormáid NYT Connections — 16 focal, ceithre ghrúpa folaithe, ceithre iarracht. Gaeilge ar dtús de réir réamhshocraithe, le litriú traidisiúnta curtha i bhfeidhm ag am rite. Beo ar an ngréasán; tógálacha dúchasacha iOS agus Android ar siúl.',
 	'work.consoleEyebrow': 'Foinse Oscailte · Ar Siúl',
 	'work.consoleStatus': 'Spyro the Dragon — 74% críochnaithe',
 	'work.consoleDescription':
