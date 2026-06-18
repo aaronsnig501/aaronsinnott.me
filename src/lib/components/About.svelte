@@ -103,7 +103,7 @@
 
 	.about-text p {
 		color: var(--ink-2);
-		font-size: 0.95rem;
+		font-size: 1.05rem;
 		line-height: 1.75;
 		margin: 0 0 16px;
 	}
@@ -130,7 +130,7 @@
 
 	.fact-value {
 		color: var(--ink);
-		font-size: 0.92rem;
+		font-size: 0.88rem;
 		line-height: 1.5;
 	}
 
