@@ -30,7 +30,7 @@
 <Contact />
 
 <footer>
-	<span>aaronsinnott.me</span>
+	<span>aaron@aaronsinnott.me</span>
 	<span>{t('footer.location')}</span>
 </footer>
 

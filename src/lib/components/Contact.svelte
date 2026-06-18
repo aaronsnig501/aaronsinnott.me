@@ -14,12 +14,12 @@
 		<h2>{t('contact.headingStart')} <em>{t('contact.headingEmphasis')}</em>.</h2>
 		<p>{t('contact.copy')}</p>
 		<div class="contact-links">
-			<a href="mailto:aaronsnig@gmail.com" class="contact-link">
+			<a href="mailto:aaron@aaronsinnott.me" class="contact-link">
 				<span class="contact-link-left">
 					<span class="contact-link-icon">✉</span>
 					<span
 						><span class="contact-link-label">Email</span><span class="contact-link-sub"
-							>aaronsnig@gmail.com</span
+							>aaron@aaronsinnott.me</span
 						></span
 					>
 				</span>

@@ -50,6 +50,7 @@
 				<a href="#contact" onclick={closeMenu}>{t('nav.contact')}</a>
 			</li>
 		</ul>
+		<a class="nav-email" href="mailto:aaron@aaronsinnott.me">aaron@aaronsinnott.me</a>
 		<button class="lang-toggle" type="button" onclick={onToggleLanguage}>
 			<span aria-hidden="true">{language === 'ga' ? '🌐' : '🇮🇪'}</span>
 			<span>{language === 'ga' ? t('language.en') : t('language.ga')}</span>
@@ -130,6 +131,20 @@
 		color: var(--accent-dark);
 	}
 
+	.nav-email {
+		color: var(--ink-3);
+		font-family: 'DM Mono', monospace;
+		font-size: 0.7rem;
+		letter-spacing: 0.04em;
+		text-decoration: none;
+		transition: color 0.2s;
+	}
+
+	.nav-email:hover,
+	.nav-email:focus-visible {
+		color: var(--accent-dark);
+	}
+
 	.lang-toggle {
 		align-items: center;
 		background: var(--bg-2);
@@ -186,6 +201,12 @@
 
 	.menu-toggle[aria-expanded='true'] span:last-child {
 		transform: translateY(-2.5px) rotate(-22deg);
+	}
+
+	@media (max-width: 1080px) {
+		.nav-email {
+			display: none;
+		}
 	}
 
 	@media (max-width: 768px) {
