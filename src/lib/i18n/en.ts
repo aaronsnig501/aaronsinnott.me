@@ -62,12 +62,15 @@ export const en = {
 	'work.consoleDescription':
 		'An open source Irish language localisation platform for retro games. A Python CLI extracts fixed-budget string tables, validates byte-length constraints, patches translated text, and generates BPS artifacts.',
 	'experience.label': 'Experience',
-	'experience.currentDate': 'Mar 2021 — Present',
-	'experience.currentTitle': 'Software Developer',
-	'experience.currentBadge': 'Senior from 2025',
-	'experience.currentDescription':
+	'experience.seniorDate': 'Jul 2025 — Present',
+	'experience.seniorTitle': 'Senior Software Developer',
+	'experience.seniorDescription':
 		'Building and maintaining distributed backend systems for a high-traffic real-time betting platform operating across multiple regulated markets. Led architecture on the feed panic system and the current bet placement decomposition.',
-	'experience.mentorTitle': 'GitHub Mentor',
+	'experience.softwareDate': 'Mar 2021 — Jul 2025',
+	'experience.softwareTitle': 'Software Developer',
+	'experience.softwareDescription':
+		'Worked across Kafka-based messaging, real-time odds delivery, market launches, compliance integrations, cashout systems, and async Python service migration.',
+	'experience.mentorTitle': 'Mentor',
 	'experience.mentorDescription':
 		'Mentored students through full project lifecycles — requirements, architecture, code review, and interview preparation.',
 	'experience.productTitle': 'Product Developer',

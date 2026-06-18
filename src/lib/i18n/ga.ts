@@ -64,12 +64,15 @@ export const ga: Record<keyof typeof en, string> = {
 	'work.consoleDescription':
 		'Ardán logánaithe foinse oscailte Gaeilge do chluichí atróshamhla. Eastóscann CLI Python táblaí teaghrán buiséad-seasta, bailíochtaíonn srianta fad beart, paistíonn téacs aistrithe, agus gineann déantáin BPS.',
 	'experience.label': 'Taithí',
-	'experience.currentDate': 'Márta 2021 — i láthair',
-	'experience.currentTitle': 'Forbróir Bogearraí',
-	'experience.currentBadge': 'Sinsearach ó 2025',
-	'experience.currentDescription':
+	'experience.seniorDate': 'Iúil 2025 — i láthair',
+	'experience.seniorTitle': 'Forbróir Bogearraí Sinsearach',
+	'experience.seniorDescription':
 		"Córais chúltaca dáilte a thógáil agus a chothabháil d'ardán gealltoireachta fíor-ama ardtráchta ag oibriú trasna margaí rialáilte éagsúla. Ceannasaíocht ar ailtireacht córas scaoill beathaithe agus ar dhianscaoileadh socrúcháin geall reatha.",
-	'experience.mentorTitle': 'Meantóir GitHub',
+	'experience.softwareDate': 'Márta 2021 — Iúil 2025',
+	'experience.softwareTitle': 'Forbróir Bogearraí',
+	'experience.softwareDescription':
+		'D’oibrigh mé ar theachtaireachtaí Kafka, seachadadh corrlaigh fíor-ama, seoltaí margaidh, comhtháthuithe comhlíonta, córais cashout, agus imirce seirbhíse Python go Sanic aisioncrónach.',
+	'experience.mentorTitle': 'Meantóir',
 	'experience.mentorDescription':
 		'Meantóireacht ar mhic léinn trí thimthriallta tionscadail iomlána — riachtanais, ailtireacht, athbhreithniú cód, agus ullmhúchán agallamh.',
 	'experience.productTitle': 'Forbróir Táirgí',
