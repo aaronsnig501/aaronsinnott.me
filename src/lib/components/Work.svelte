@@ -1,5 +1,6 @@
 <script lang="ts">
 	import { getI18nContext, translate, type TranslationKey } from '$lib/i18n';
+	import SectionLabel from './SectionLabel.svelte';
 
 	const { language } = getI18nContext();
 
@@ -9,9 +10,37 @@
 </script>
 
 <section id="work" class="work-section">
-	<div class="section-label">{t('work.label')}</div>
+	<SectionLabel>{t('work.label')}</SectionLabel>
 	<div class="projects-grid">
-		<article class="project-card featured labs fade-up">
+		<article class="project-card personal fade-up">
+			<div class="project-eyebrow">{t('work.emuhubEyebrow')}</div>
+			<div class="project-status">
+				<span class="status-dot"></span><span>{t('work.liveGithubPages')}</span>
+			</div>
+			<h2 class="project-title">EMU·HUB</h2>
+			<p class="project-desc">{t('work.emuhubDescription')}</p>
+			<div class="project-tech">
+				<span>sveltekit</span><span>typescript</span><span>canvas api</span><span>docker</span><span
+					>github pages</span
+				>
+			</div>
+		</article>
+
+		<article class="project-card featured personal fade-up">
+			<div class="project-eyebrow">{t('work.ceangalEyebrow')}</div>
+			<div class="project-status">
+				<span class="status-dot"></span><span>{t('work.ceangalStatus')}</span>
+			</div>
+			<h2 class="project-title">Ceangal</h2>
+			<p class="project-desc">{t('work.ceangalDescription')}</p>
+			<div class="project-tech">
+				<span>react 18</span><span>capacitor</span><span>aws s3</span><span>cloudfront</span><span
+					>github actions</span
+				><span>admob</span><span>revenuecat</span>
+			</div>
+		</article>
+
+		<article class="project-card labs fade-up">
 			<div class="project-eyebrow">{t('work.misneachEyebrow')}</div>
 			<div class="project-status">
 				<span class="status-dot"></span><span>{t('work.liveProduction')}</span>
@@ -19,23 +48,9 @@
 			<h2 class="project-title">Misneach</h2>
 			<p class="project-desc">{t('work.misneachDescription')}</p>
 			<div class="project-tech">
-				<span>NestJS Microservices</span><span>SvelteKit</span><span>Capacitor</span><span
-					>AWS EC2</span
-				><span>MariaDB</span><span>Plausible</span>
-			</div>
-		</article>
-
-		<article class="project-card personal fade-up">
-			<div class="project-eyebrow">{t('work.emuhubEyebrow')}</div>
-			<div class="project-status">
-				<span class="status-dot"></span><span>{t('work.liveGithubPages')}</span>
-			</div>
-			<h3 class="project-title">EMU·HUB</h3>
-			<p class="project-desc">{t('work.emuhubDescription')}</p>
-			<div class="project-tech">
-				<span>SvelteKit</span><span>TypeScript</span><span>Canvas API</span><span>Docker</span><span
-					>GitHub Pages</span
-				>
+				<span>nestjs microservices</span><span>sveltekit</span><span>capacitor</span><span
+					>aws ec2</span
+				><span>mariadb</span><span>plausible</span>
 			</div>
 		</article>
 
@@ -44,11 +59,11 @@
 			<div class="project-status">
 				<span class="status-dot"></span><span>{t('work.consoleStatus')}</span>
 			</div>
-			<h3 class="project-title">Gaeilge sa Chonsol</h3>
+			<h2 class="project-title">Gaeilge sa Chonsol</h2>
 			<p class="project-desc">{t('work.consoleDescription')}</p>
 			<div class="project-tech">
-				<span>Python</span><span>SvelteKit</span><span>Supabase</span><span>GitHub Actions</span
-				><span>BPS Patching</span>
+				<span>python</span><span>sveltekit</span><span>supabase</span><span>github actions</span
+				><span>bps patching</span>
 			</div>
 		</article>
 	</div>
@@ -56,10 +71,11 @@
 
 <style>
 	.work-section {
-		padding: 100px 48px;
+		margin: 0 auto;
+		max-width: 900px;
+		padding: 80px 48px;
 	}
 
-	.section-label,
 	.project-eyebrow,
 	.project-status,
 	.project-tech span {
@@ -67,64 +83,39 @@
 		font-variant-ligatures: contextual common-ligatures;
 	}
 
-	.section-label {
-		align-items: center;
-		color: var(--accent-green);
-		display: flex;
-		font-size: 0.68rem;
-		gap: 14px;
-		letter-spacing: 0.18em;
-		margin-bottom: 48px;
-		text-transform: lowercase;
-	}
-
-	.section-label::before {
-		content: '#';
-	}
-
-	.section-label::after {
-		background: var(--rule);
-		content: '';
-		flex: 1;
-		height: 0.5px;
-		max-width: 80px;
-	}
-
 	.projects-grid {
-		display: grid;
-		gap: 24px;
-		grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-		max-width: 1100px;
+		display: flex;
+		flex-direction: column;
+		gap: 16px;
 	}
 
 	.project-card {
 		background: var(--bg-2);
-		border: 0.5px solid var(--rule);
-		border-radius: 8px;
+		border: 1px solid var(--rule);
+		border-radius: 4px;
 		overflow: hidden;
-		padding: 32px;
+		padding: 28px 32px;
 		position: relative;
-		transition: transform 0.2s;
+		transition: border-color 0.2s;
 	}
 
 	.project-card:hover {
-		transform: translateY(-3px);
+		border-color: var(--accent-border);
 	}
 
 	.project-card::before {
 		content: '';
-		height: 2px;
+		height: 100%;
 		left: 0;
 		position: absolute;
-		right: 0;
 		top: 0;
-		transform: scaleX(0);
-		transform-origin: left;
-		transition: transform 0.3s ease;
+		opacity: 0;
+		transition: opacity 0.2s;
+		width: 2px;
 	}
 
 	.project-card:hover::before {
-		transform: scaleX(1);
+		opacity: 1;
 	}
 
 	.project-card.personal::before {
@@ -137,22 +128,11 @@
 
 	.project-card.featured {
 		background: var(--bg-3);
-		border-color: transparent;
-		grid-column: span 2;
+		border-color: var(--accent-border);
 	}
 
-	.project-card.featured .project-title {
-		color: var(--text);
-	}
-
-	.project-card.featured .project-desc {
-		color: var(--text-2);
-	}
-
-	.project-card.featured .project-tech span {
-		background: rgba(192, 202, 245, 0.08);
-		border-color: var(--rule);
-		color: var(--text-2);
+	.project-card.featured::before {
+		opacity: 1;
 	}
 
 	.project-eyebrow,
@@ -207,6 +187,7 @@
 		font-size: 1rem;
 		line-height: 1.7;
 		margin: 0 0 20px;
+		max-width: 640px;
 	}
 
 	.project-tech {
@@ -217,12 +198,12 @@
 
 	.project-tech span {
 		background: var(--bg);
-		border: 0.5px solid var(--rule);
-		border-radius: 100px;
-		color: var(--ink-2);
-		font-size: 0.65rem;
-		letter-spacing: 0.05em;
-		padding: 3px 10px;
+		border: 1px solid var(--rule);
+		border-radius: 2px;
+		color: var(--text-3);
+		font-size: 0.62rem;
+		letter-spacing: 0.04em;
+		padding: 2px 8px;
 		text-transform: lowercase;
 	}
 
@@ -236,10 +217,6 @@
 		.work-section {
 			padding-left: 24px;
 			padding-right: 24px;
-		}
-
-		.project-card.featured {
-			grid-column: span 1;
 		}
 	}
 </style>

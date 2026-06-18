@@ -39,21 +39,12 @@
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
+		margin: 0 auto;
+		max-width: 900px;
 		min-height: 100vh;
 		overflow: hidden;
-		padding: 120px 48px 80px;
+		padding: 100px 48px 80px;
 		position: relative;
-	}
-
-	.hero::before {
-		background: radial-gradient(circle, rgba(125, 207, 255, 0.12) 0%, transparent 70%);
-		content: '';
-		height: 600px;
-		pointer-events: none;
-		position: absolute;
-		right: -120px;
-		top: -100px;
-		width: 600px;
 	}
 
 	.hero-content {
@@ -226,6 +217,7 @@
 		gap: 10px;
 		letter-spacing: 0.1em;
 		position: absolute;
+		left: 48px;
 		text-transform: lowercase;
 	}
 
@@ -263,7 +255,7 @@
 
 	@media (max-width: 768px) {
 		.hero {
-			padding: 100px 24px 80px;
+			padding: 90px 24px 80px;
 		}
 	}
 </style>

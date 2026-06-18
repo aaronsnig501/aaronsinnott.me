@@ -69,36 +69,31 @@
 <style>
 	.site-nav {
 		align-items: center;
-		background: rgba(36, 40, 59, 0);
-		border-bottom: 0.5px solid rgba(192, 202, 245, 0);
+		backdrop-filter: blur(12px);
+		background: rgba(36, 40, 59, 0.92);
+		border-bottom: 1px solid var(--rule);
 		display: flex;
-		height: 60px;
+		height: 56px;
 		justify-content: space-between;
 		left: 0;
 		padding: 0 48px;
 		position: fixed;
 		right: 0;
 		top: 0;
-		transition:
-			background 0.2s,
-			border-color 0.2s,
-			box-shadow 0.2s;
+		transition: box-shadow 0.2s;
 		z-index: 100;
 	}
 
 	.site-nav.scrolled {
-		backdrop-filter: blur(12px);
-		background: rgba(36, 40, 59, 0.88);
-		border-bottom-color: var(--rule);
 		box-shadow: 0 10px 32px rgba(0, 0, 0, 0.22);
 	}
 
 	.nav-logo {
-		color: var(--ink);
+		color: var(--accent);
 		font-family: 'Fira Code', monospace;
 		font-variant-ligatures: contextual common-ligatures;
-		font-size: 0.8rem;
-		letter-spacing: 0.04em;
+		font-size: 0.78rem;
+		letter-spacing: 0.06em;
 		text-decoration: none;
 	}
 
@@ -110,7 +105,7 @@
 
 	.nav-links {
 		display: flex;
-		gap: 32px;
+		gap: 28px;
 		list-style: none;
 		margin: 0;
 		padding: 0;
@@ -118,8 +113,8 @@
 
 	.nav-links a {
 		color: var(--ink-2);
-		font-size: 0.85rem;
-		letter-spacing: 0.01em;
+		font-size: 0.72rem;
+		letter-spacing: 0.06em;
 		text-decoration: none;
 		text-transform: lowercase;
 		transition: color 0.2s;
@@ -147,9 +142,9 @@
 
 	.lang-toggle {
 		align-items: center;
-		background: var(--bg-2);
-		border: 0.5px solid var(--rule);
-		border-radius: 100px;
+		background: transparent;
+		border: 1px solid var(--rule);
+		border-radius: 3px;
 		color: var(--ink-2);
 		cursor: pointer;
 		display: flex;
@@ -158,7 +153,7 @@
 		font-size: 0.7rem;
 		gap: 6px;
 		letter-spacing: 0.05em;
-		padding: 5px 12px 5px 8px;
+		padding: 4px 10px;
 		text-transform: lowercase;
 		transition:
 			border-color 0.2s,

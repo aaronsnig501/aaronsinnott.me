@@ -94,6 +94,8 @@
 		--text-2: #9aa0c0;
 		--text-3: #8891b8;
 		--accent: #7dcfff;
+		--accent-dim: rgba(125, 207, 255, 0.1);
+		--accent-border: rgba(125, 207, 255, 0.25);
 		--accent-green: #9ece6a;
 		--accent-purple: #bb9af7;
 		--accent-yellow: #e0af68;
