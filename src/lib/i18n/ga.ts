@@ -14,7 +14,6 @@ export const ga: Record<keyof typeof en, string> = {
 	'language.ga': 'Gaeilge',
 	'nav.about': 'Fúm',
 	'nav.work': 'Obair',
-	'nav.writing': 'Scríbhneoireacht',
 	'nav.experience': 'Taithí',
 	'nav.contact': 'Teagmháil',
 	'hero.eyebrow': 'Forbróir Bogearraí Sinsearach · Loch Garman, Éire',
@@ -64,22 +63,6 @@ export const ga: Record<keyof typeof en, string> = {
 	'work.consoleStatus': 'Spyro the Dragon — 74% críochnaithe',
 	'work.consoleDescription':
 		'Ardán logánaithe foinse oscailte Gaeilge do chluichí atróshamhla. Eastóscann CLI Python táblaí teaghrán buiséad-seasta, bailíochtaíonn srianta fad beart, paistíonn téacs aistrithe, agus gineann déantáin BPS.',
-	'writing.label': 'Scríbhneoireacht',
-	'writing.lede':
-		'"Gaeilge a athfhoghlaim agus ag titim síos poll coinín de chultúr, céannacht, agus coilíneachas ar an mbealach. Scríobhaim mar a labhraím — go hionraic, agus ní i gcónaí go héifeachtach."',
-	'writing.copy':
-		'Clúdaíonn an blag athbheochan na Gaeilge, stair choilíneach, céannacht, agus meicníocht phraiticiúil coinneáil teanga beo — haiceáil ROM, aistriúchán fotheideal, gnólachtaí áitiúla a chur chuige, bonneagar pobail a thógáil.',
-	'writing.card1Label': 'Teanga & Oideachas',
-	'writing.card1Title':
-		'Cén fáth nach labhraíonn formhór na nÉireannach Gaeilge — agus cén fáth nach locht an mhúinteora é',
-	'writing.card1Copy':
-		'An fhadhb nochta, an fhadhb shóisialta, agus cén fáth nach raibh an bac fíor riamh sa seomra ranga.',
-	'writing.card2Label': 'Athbheochan i nGníomh',
-	'writing.card2Title':
-		'Super Mario Bros. a aistriú go Gaeilge — cad a theastaíonn agus cén fáth a bhfuil sé tábhachtach',
-	'writing.card2Copy':
-		'Tumadh domhain isteach i haiceáil ROM, ionchódú carachtar, agus athbheochan teanga in áiteanna gan choinne.',
-	'writing.cta': 'Blag ag seoladh go luath — lean ar Substack →',
 	'experience.label': 'Taithí',
 	'experience.currentDate': 'Márta 2021 — i láthair',
 	'experience.currentTitle': 'Forbróir Bogearraí',
