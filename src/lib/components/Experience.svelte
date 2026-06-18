@@ -12,14 +12,19 @@
 	<div class="section-label">{t('experience.label')}</div>
 	<div class="timeline">
 		<div class="timeline-item fade-up">
-			<div class="timeline-date">{t('experience.currentDate')}</div>
+			<div class="timeline-date">{t('experience.seniorDate')}</div>
 			<div class="timeline-content">
-				<h3>
-					{t('experience.currentTitle')}
-					<span class="senior-badge">{t('experience.currentBadge')}</span>
-				</h3>
+				<h3>{t('experience.seniorTitle')}</h3>
 				<div class="company">888Spectate · 888Sport (evoke)</div>
-				<p>{t('experience.currentDescription')}</p>
+				<p>{t('experience.seniorDescription')}</p>
+			</div>
+		</div>
+		<div class="timeline-item fade-up">
+			<div class="timeline-date">{t('experience.softwareDate')}</div>
+			<div class="timeline-content">
+				<h3>{t('experience.softwareTitle')}</h3>
+				<div class="company">888Spectate · 888Sport (evoke)</div>
+				<p>{t('experience.softwareDescription')}</p>
 			</div>
 		</div>
 		<div class="timeline-item fade-up">
@@ -112,20 +117,6 @@
 		font-size: 0.85rem;
 		line-height: 1.65;
 		margin: 0;
-	}
-
-	.senior-badge {
-		background: var(--accent-bg);
-		border-radius: 100px;
-		color: var(--accent-dark);
-		display: inline-block;
-		font-family: 'DM Mono', monospace;
-		font-size: 0.62rem;
-		letter-spacing: 0.08em;
-		margin-left: 8px;
-		padding: 2px 8px;
-		text-transform: uppercase;
-		vertical-align: middle;
 	}
 
 	@media (max-width: 768px) {
