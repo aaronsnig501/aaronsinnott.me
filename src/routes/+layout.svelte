@@ -87,18 +87,25 @@
 
 <style>
 	:global(:root) {
-		--ink: #1c1c1a;
-		--ink-2: #4a4a46;
-		--ink-3: #888780;
-		--bg: #f5f3ee;
-		--bg-2: #eceae3;
-		--white: #ffffff;
-		--accent: #1d9e75;
-		--accent-dark: #0f6e56;
-		--accent-bg: #e1f5ee;
-		--rule: rgba(0, 0, 0, 0.1);
-		--amber: #ba7517;
-		--amber-bg: #faeeda;
+		--bg: #24283b;
+		--bg-2: #292e42;
+		--bg-3: #1f2335;
+		--text: #c0caf5;
+		--text-2: #9aa0c0;
+		--text-3: #8891b8;
+		--accent: #7dcfff;
+		--accent-green: #9ece6a;
+		--accent-purple: #bb9af7;
+		--accent-yellow: #e0af68;
+		--rule: rgba(192, 202, 245, 0.08);
+		--ink: var(--text);
+		--ink-2: var(--text-2);
+		--ink-3: var(--text-3);
+		--white: var(--text);
+		--accent-dark: var(--accent);
+		--accent-bg: rgba(125, 207, 255, 0.12);
+		--amber: var(--accent-yellow);
+		--amber-bg: rgba(224, 175, 104, 0.12);
 	}
 
 	:global(*),
@@ -131,7 +138,7 @@
 
 	#lang-chooser {
 		align-items: center;
-		background: var(--ink);
+		background: var(--bg-3);
 		display: flex;
 		flex-direction: column;
 		gap: 48px;
@@ -144,7 +151,7 @@
 	}
 
 	.chooser-logo {
-		color: rgba(255, 255, 255, 0.3);
+		color: var(--text-3);
 		font-family: 'DM Mono', monospace;
 		font-size: 0.8rem;
 		letter-spacing: 0.1em;
@@ -155,7 +162,7 @@
 	}
 
 	#lang-chooser h1 {
-		color: rgba(255, 255, 255, 0.55);
+		color: var(--text-2);
 		font-family: 'Fraunces', serif;
 		font-size: clamp(1.3rem, 3vw, 1.9rem);
 		font-weight: 300;
@@ -179,8 +186,8 @@
 
 	.lang-btn {
 		align-items: center;
-		background: rgba(255, 255, 255, 0.04);
-		border: 0.5px solid rgba(255, 255, 255, 0.12);
+		background: var(--bg-2);
+		border: 0.5px solid var(--rule);
 		border-radius: 8px;
 		color: inherit;
 		cursor: pointer;
@@ -197,7 +204,7 @@
 
 	.lang-btn:hover,
 	.lang-btn:focus-visible {
-		background: rgba(29, 158, 117, 0.12);
+		background: var(--accent-bg);
 		border-color: var(--accent);
 		transform: translateY(-2px);
 	}
@@ -222,12 +229,12 @@
 	}
 
 	.lang-native {
-		color: rgba(255, 255, 255, 0.35);
+		color: var(--text-3);
 		font-size: 0.7rem;
 	}
 
 	.chooser-footnote {
-		color: rgba(255, 255, 255, 0.2);
+		color: var(--text-3);
 		font-size: 0.68rem;
 		text-align: center;
 	}

@@ -117,7 +117,7 @@
 
 	.contact-link {
 		align-items: center;
-		background: var(--white);
+		background: var(--bg-2);
 		border: 0.5px solid var(--rule);
 		border-radius: 6px;
 		display: flex;

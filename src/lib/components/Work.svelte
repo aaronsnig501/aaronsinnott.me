@@ -93,7 +93,7 @@
 	}
 
 	.project-card {
-		background: var(--white);
+		background: var(--bg-2);
 		border: 0.5px solid var(--rule);
 		border-radius: 8px;
 		overflow: hidden;
@@ -124,23 +124,23 @@
 	}
 
 	.project-card.featured {
-		background: var(--ink);
+		background: var(--bg-3);
 		border-color: transparent;
 		grid-column: span 2;
 	}
 
 	.project-card.featured .project-title {
-		color: var(--white);
+		color: var(--text);
 	}
 
 	.project-card.featured .project-desc {
-		color: rgba(255, 255, 255, 0.65);
+		color: var(--text-2);
 	}
 
 	.project-card.featured .project-tech span {
-		background: rgba(255, 255, 255, 0.08);
-		border-color: rgba(255, 255, 255, 0.1);
-		color: rgba(255, 255, 255, 0.7);
+		background: rgba(192, 202, 245, 0.08);
+		border-color: var(--rule);
+		color: var(--text-2);
 	}
 
 	.project-eyebrow,
@@ -153,7 +153,7 @@
 	}
 
 	.project-card.featured .project-eyebrow {
-		color: rgba(29, 158, 117, 0.9);
+		color: var(--accent);
 	}
 
 	.project-status {

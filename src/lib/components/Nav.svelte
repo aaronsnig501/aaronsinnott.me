@@ -69,8 +69,8 @@
 <style>
 	.site-nav {
 		align-items: center;
-		background: rgba(245, 243, 238, 0);
-		border-bottom: 0.5px solid rgba(0, 0, 0, 0);
+		background: rgba(36, 40, 59, 0);
+		border-bottom: 0.5px solid rgba(192, 202, 245, 0);
 		display: flex;
 		height: 60px;
 		justify-content: space-between;
@@ -88,9 +88,9 @@
 
 	.site-nav.scrolled {
 		backdrop-filter: blur(12px);
-		background: rgba(245, 243, 238, 0.88);
+		background: rgba(36, 40, 59, 0.88);
 		border-bottom-color: var(--rule);
-		box-shadow: 0 10px 32px rgba(28, 28, 26, 0.04);
+		box-shadow: 0 10px 32px rgba(0, 0, 0, 0.22);
 	}
 
 	.nav-logo {
@@ -168,7 +168,7 @@
 
 	.menu-toggle {
 		align-items: center;
-		background: var(--ink);
+		background: var(--bg-3);
 		border: 0;
 		border-radius: 100px;
 		cursor: pointer;
@@ -212,10 +212,10 @@
 		}
 
 		.nav-links {
-			background: rgba(245, 243, 238, 0.96);
+			background: rgba(36, 40, 59, 0.96);
 			border: 0.5px solid var(--rule);
 			border-radius: 8px;
-			box-shadow: 0 18px 44px rgba(28, 28, 26, 0.12);
+			box-shadow: 0 18px 44px rgba(0, 0, 0, 0.28);
 			display: grid;
 			gap: 0;
 			opacity: 0;

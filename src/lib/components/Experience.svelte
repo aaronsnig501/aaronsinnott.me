@@ -48,7 +48,7 @@
 
 <style>
 	.experience-section {
-		background: var(--white);
+		background: var(--bg-2);
 		border-bottom: 0.5px solid var(--rule);
 		border-top: 0.5px solid var(--rule);
 		padding: 100px 48px;
