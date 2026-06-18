@@ -18,7 +18,7 @@
 					{t('experience.currentTitle')}
 					<span class="senior-badge">{t('experience.currentBadge')}</span>
 				</h3>
-				<div class="company">888Spectate · 888Sport (888 William Hill)</div>
+				<div class="company">888Spectate · 888Sport (evoke)</div>
 				<p>{t('experience.currentDescription')}</p>
 			</div>
 		</div>

@@ -38,7 +38,7 @@ export const ga: Record<keyof typeof en, string> = {
 	'about.bio4':
 		'Táim ag lorg ról inar féidir liom treo teicniúil a thiomáint chomh maith le seachadadh, go hidéalach in áit a luann doimhneacht agus cuspóir araon.',
 	'about.currentlyLabel': 'Faoi láthair',
-	'about.currentlyValue': 'Forbróir Bogearraí Sinsearach ag 888Spectate (888 William Hill)',
+	'about.currentlyValue': 'Forbróir Bogearraí Sinsearach ag 888Spectate · 888Sport (evoke)',
 	'about.alsoBuildingLabel': 'Ag tógáil freisin',
 	'about.alsoBuildingValue': 'Misneach — Ardán Normalúcháin na Gaeilge',
 	'about.buildingTowardLabel': 'Ag tógáil i dtreo',
@@ -83,7 +83,7 @@ export const ga: Record<keyof typeof en, string> = {
 	'experience.label': 'Taithí',
 	'experience.currentDate': 'Márta 2021 — i láthair',
 	'experience.currentTitle': 'Forbróir Bogearraí',
-	'experience.currentBadge': 'Sinsearach ó ~2022',
+	'experience.currentBadge': 'Sinsearach ó 2025',
 	'experience.currentDescription':
 		"Córais chúltaca dáilte a thógáil agus a chothabháil d'ardán gealltoireachta fíor-ama ardtráchta ag oibriú trasna margaí rialáilte éagsúla. Ceannasaíocht ar ailtireacht córas scaoill beathaithe agus ar dhianscaoileadh socrúcháin geall reatha.",
 	'experience.mentorTitle': 'Meantóir GitHub',

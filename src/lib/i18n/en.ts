@@ -36,7 +36,7 @@ export const en = {
 	'about.bio4':
 		"I'm looking for roles where I can drive technical direction as well as deliver, ideally somewhere that values both depth and purpose.",
 	'about.currentlyLabel': 'Currently',
-	'about.currentlyValue': 'Senior Software Developer at 888Spectate (888 William Hill)',
+	'about.currentlyValue': 'Senior Software Developer at 888Spectate · 888Sport (evoke)',
 	'about.alsoBuildingLabel': 'Also building',
 	'about.alsoBuildingValue': 'Misneach — Irish Language Normalisation Platform',
 	'about.buildingTowardLabel': 'Building toward',
@@ -81,7 +81,7 @@ export const en = {
 	'experience.label': 'Experience',
 	'experience.currentDate': 'Mar 2021 — Present',
 	'experience.currentTitle': 'Software Developer',
-	'experience.currentBadge': 'Senior from ~2022',
+	'experience.currentBadge': 'Senior from 2025',
 	'experience.currentDescription':
 		'Building and maintaining distributed backend systems for a high-traffic real-time betting platform operating across multiple regulated markets. Led architecture on the feed panic system and the current bet placement decomposition.',
 	'experience.mentorTitle': 'GitHub Mentor',
