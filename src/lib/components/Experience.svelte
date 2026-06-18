@@ -108,7 +108,7 @@
 	.timeline-content h3 {
 		color: var(--ink);
 		font-family: 'Fraunces', serif;
-		font-size: 1rem;
+		font-size: 0.95rem;
 		font-weight: 500;
 		margin: 0 0 2px;
 	}
@@ -138,7 +138,7 @@
 
 	.timeline-content p {
 		color: var(--ink-2);
-		font-size: 0.85rem;
+		font-size: 0.95rem;
 		line-height: 1.65;
 		margin: 0;
 	}

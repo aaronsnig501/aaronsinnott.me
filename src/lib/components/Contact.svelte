@@ -109,7 +109,7 @@
 
 	.contact-inner > p {
 		color: var(--ink-2);
-		font-size: 0.95rem;
+		font-size: 1.05rem;
 		line-height: 1.7;
 		margin: 0 0 40px;
 	}
@@ -165,7 +165,7 @@
 
 	.contact-link-label {
 		color: var(--ink);
-		font-size: 0.9rem;
+		font-size: 0.88rem;
 		font-weight: 500;
 		text-transform: lowercase;
 	}

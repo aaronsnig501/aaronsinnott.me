@@ -113,7 +113,7 @@
 	.hero h1 {
 		color: var(--ink);
 		font-family: 'Fraunces', serif;
-		font-size: clamp(3rem, 7vw, 6rem);
+		font-size: clamp(3.2rem, 7vw, 6rem);
 		font-weight: 300;
 		line-height: 1.05;
 		margin: 0 0 32px;
@@ -127,7 +127,7 @@
 
 	.hero-sub {
 		color: var(--ink-2);
-		font-size: 1.1rem;
+		font-size: 1.25rem;
 		line-height: 1.7;
 		margin: 0 0 48px;
 		max-width: 540px;

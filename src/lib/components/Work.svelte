@@ -196,7 +196,7 @@
 	.project-title {
 		color: var(--ink);
 		font-family: 'Fraunces', serif;
-		font-size: 1.5rem;
+		font-size: 1.6rem;
 		font-weight: 400;
 		line-height: 1.2;
 		margin: 0 0 12px;
@@ -204,7 +204,7 @@
 
 	.project-desc {
 		color: var(--ink-2);
-		font-size: 0.88rem;
+		font-size: 1rem;
 		line-height: 1.7;
 		margin: 0 0 20px;
 	}
