@@ -12,7 +12,6 @@ export const en = {
 	'language.ga': 'Gaeilge',
 	'nav.about': 'About',
 	'nav.work': 'Work',
-	'nav.writing': 'Writing',
 	'nav.experience': 'Experience',
 	'nav.contact': 'Contact',
 	'hero.eyebrow': 'Senior Software Developer · Loch Garman, Éire',
@@ -62,22 +61,6 @@ export const en = {
 	'work.consoleStatus': 'Spyro the Dragon — 74% complete',
 	'work.consoleDescription':
 		'An open source Irish language localisation platform for retro games. A Python CLI extracts fixed-budget string tables, validates byte-length constraints, patches translated text, and generates BPS artifacts.',
-	'writing.label': 'Writing',
-	'writing.lede':
-		'"Relearning Irish and falling down a rabbit hole of culture, identity, and colonialism along the way. I write the way I talk — honestly, and not always efficiently."',
-	'writing.copy':
-		'The blog covers Irish language revival, colonial history, identity, and the practical mechanics of keeping a language alive — ROM hacking, subtitle translation, approaching local businesses, building community infrastructure.',
-	'writing.card1Label': 'Language & Education',
-	'writing.card1Title':
-		"Why most Irish people don't speak Irish — and why it's not the teacher's fault",
-	'writing.card1Copy':
-		'The exposure problem, the social problem, and why the real barrier was never in the classroom.',
-	'writing.card2Label': 'Revival in Practice',
-	'writing.card2Title':
-		'Translating Super Mario Bros. into Irish — what it takes and why it matters',
-	'writing.card2Copy':
-		'A deep dive into ROM hacking, character encoding, and language revival in unexpected places.',
-	'writing.cta': 'Blog launching soon — follow on Substack →',
 	'experience.label': 'Experience',
 	'experience.currentDate': 'Mar 2021 — Present',
 	'experience.currentTitle': 'Software Developer',

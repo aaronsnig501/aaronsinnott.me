@@ -41,9 +41,6 @@
 			<li><a href="#about" onclick={closeMenu}>{t('nav.about')}</a></li>
 			<li><a href="#work" onclick={closeMenu}>{t('nav.work')}</a></li>
 			<li>
-				<a href="#writing" onclick={closeMenu}>{t('nav.writing')}</a>
-			</li>
-			<li>
 				<a href="#experience" onclick={closeMenu}>{t('nav.experience')}</a>
 			</li>
 			<li>

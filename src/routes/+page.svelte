@@ -6,7 +6,6 @@
 	import { getI18nContext, translate, type TranslationKey } from '$lib/i18n';
 	import ScrollAnimations from '$lib/components/ScrollAnimations.svelte';
 	import Work from '$lib/components/Work.svelte';
-	import Writing from '$lib/components/Writing.svelte';
 
 	const { language } = getI18nContext();
 
@@ -22,8 +21,6 @@
 <About />
 
 <Work />
-
-<Writing />
 
 <Experience />
 
