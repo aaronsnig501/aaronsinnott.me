@@ -101,7 +101,8 @@
 		align-items: center;
 		color: var(--accent-dark);
 		display: flex;
-		font-family: 'DM Mono', monospace;
+		font-family: 'Fira Code', monospace;
+		font-variant-ligatures: contextual common-ligatures;
 		font-size: 0.75rem;
 		gap: 10px;
 		letter-spacing: 0.16em;
@@ -154,7 +155,8 @@
 	.tag {
 		border: 0.5px solid;
 		border-radius: 100px;
-		font-family: 'DM Mono', monospace;
+		font-family: 'Fira Code', monospace;
+		font-variant-ligatures: contextual common-ligatures;
 		font-size: 0.72rem;
 		letter-spacing: 0.06em;
 		padding: 6px 14px;
@@ -225,7 +227,8 @@
 		bottom: 40px;
 		color: var(--ink-3);
 		display: flex;
-		font-family: 'DM Mono', monospace;
+		font-family: 'Fira Code', monospace;
+		font-variant-ligatures: contextual common-ligatures;
 		font-size: 0.68rem;
 		gap: 10px;
 		letter-spacing: 0.1em;

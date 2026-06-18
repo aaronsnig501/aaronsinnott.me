@@ -56,7 +56,8 @@
 
 	.section-label,
 	.timeline-date {
-		font-family: 'DM Mono', monospace;
+		font-family: 'Fira Code', monospace;
+		font-variant-ligatures: contextual common-ligatures;
 	}
 
 	.section-label {

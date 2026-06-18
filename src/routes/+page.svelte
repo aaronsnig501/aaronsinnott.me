@@ -33,7 +33,8 @@
 
 <style>
 	footer span {
-		font-family: 'DM Mono', monospace;
+		font-family: 'Fira Code', monospace;
+		font-variant-ligatures: contextual common-ligatures;
 	}
 
 	footer {

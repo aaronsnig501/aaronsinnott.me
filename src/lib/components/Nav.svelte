@@ -95,7 +95,8 @@
 
 	.nav-logo {
 		color: var(--ink);
-		font-family: 'DM Mono', monospace;
+		font-family: 'Fira Code', monospace;
+		font-variant-ligatures: contextual common-ligatures;
 		font-size: 0.8rem;
 		letter-spacing: 0.04em;
 		text-decoration: none;
@@ -130,7 +131,8 @@
 
 	.nav-email {
 		color: var(--ink-3);
-		font-family: 'DM Mono', monospace;
+		font-family: 'Fira Code', monospace;
+		font-variant-ligatures: contextual common-ligatures;
 		font-size: 0.7rem;
 		letter-spacing: 0.04em;
 		text-decoration: none;
@@ -150,7 +152,8 @@
 		color: var(--ink-2);
 		cursor: pointer;
 		display: flex;
-		font-family: 'DM Mono', monospace;
+		font-family: 'Fira Code', monospace;
+		font-variant-ligatures: contextual common-ligatures;
 		font-size: 0.7rem;
 		gap: 6px;
 		letter-spacing: 0.05em;
