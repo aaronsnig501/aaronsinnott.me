@@ -63,7 +63,8 @@
 
 	.section-label,
 	.contact-link-sub {
-		font-family: 'DM Mono', monospace;
+		font-family: 'Fira Code', monospace;
+		font-variant-ligatures: contextual common-ligatures;
 	}
 
 	.section-label {

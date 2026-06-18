@@ -63,7 +63,8 @@
 	.project-eyebrow,
 	.project-status,
 	.project-tech span {
-		font-family: 'DM Mono', monospace;
+		font-family: 'Fira Code', monospace;
+		font-variant-ligatures: contextual common-ligatures;
 	}
 
 	.section-label {

@@ -50,7 +50,7 @@
 	<link rel="preconnect" href="https://fonts.googleapis.com" />
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous" />
 	<link
-		href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;1,9..144,300;1,9..144,400&family=DM+Mono:wght@300;400;500&family=Instrument+Sans:ital,wght@0,400;0,500;1,400&display=swap"
+		href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500&family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;1,9..144,300;1,9..144,400&family=Instrument+Sans:ital,wght@0,400;0,500;1,400&display=swap"
 		rel="stylesheet"
 	/>
 </svelte:head>
@@ -152,7 +152,8 @@
 
 	.chooser-logo {
 		color: var(--text-3);
-		font-family: 'DM Mono', monospace;
+		font-family: 'Fira Code', monospace;
+		font-variant-ligatures: contextual common-ligatures;
 		font-size: 0.8rem;
 		letter-spacing: 0.1em;
 		position: absolute;
@@ -223,7 +224,8 @@
 
 	.lang-native,
 	.chooser-footnote {
-		font-family: 'DM Mono', monospace;
+		font-family: 'Fira Code', monospace;
+		font-variant-ligatures: contextual common-ligatures;
 		letter-spacing: 0.08em;
 		text-transform: uppercase;
 	}
