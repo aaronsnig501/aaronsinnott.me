@@ -18,7 +18,7 @@
 				<span class="contact-link-left">
 					<span class="contact-link-icon">✉</span>
 					<span
-						><span class="contact-link-label">Email</span><span class="contact-link-sub"
+						><span class="contact-link-label">email</span><span class="contact-link-sub"
 							>aaron@aaronsinnott.me</span
 						></span
 					>
@@ -34,7 +34,7 @@
 				<span class="contact-link-left">
 					<span class="contact-link-icon">in</span>
 					<span
-						><span class="contact-link-label">LinkedIn</span><span class="contact-link-sub"
+						><span class="contact-link-label">linkedin</span><span class="contact-link-sub"
 							>linkedin.com/in/aaronsinnott</span
 						></span
 					>
@@ -45,7 +45,7 @@
 				<span class="contact-link-left">
 					<span class="contact-link-icon">gh</span>
 					<span
-						><span class="contact-link-label">GitHub</span><span class="contact-link-sub"
+						><span class="contact-link-label">github</span><span class="contact-link-sub"
 							>github.com/aaronsnig</span
 						></span
 					>
@@ -69,13 +69,17 @@
 
 	.section-label {
 		align-items: center;
-		color: var(--accent-dark);
+		color: var(--accent-green);
 		display: flex;
 		font-size: 0.68rem;
 		gap: 14px;
 		letter-spacing: 0.18em;
 		margin-bottom: 48px;
-		text-transform: uppercase;
+		text-transform: lowercase;
+	}
+
+	.section-label::before {
+		content: '#';
 	}
 
 	.section-label::after {
@@ -118,12 +122,14 @@
 
 	.contact-link {
 		align-items: center;
-		background: var(--bg-2);
+		background: var(--bg-3);
 		border: 0.5px solid var(--rule);
-		border-radius: 6px;
+		border-radius: 3px;
 		display: flex;
+		font-family: 'Fira Code', monospace;
+		font-variant-ligatures: contextual common-ligatures;
 		justify-content: space-between;
-		padding: 18px 24px;
+		padding: 14px 18px;
 		text-decoration: none;
 		transition:
 			background 0.2s,
@@ -131,8 +137,8 @@
 	}
 
 	.contact-link:hover {
-		background: var(--accent-bg);
-		border-color: var(--accent);
+		background: rgba(158, 206, 106, 0.08);
+		border-color: rgba(158, 206, 106, 0.3);
 	}
 
 	.contact-link-left {
@@ -143,13 +149,13 @@
 
 	.contact-link-icon {
 		align-items: center;
-		background: var(--bg);
-		border-radius: 6px;
+		color: var(--accent-green);
 		display: flex;
+		font-family: 'Fira Code', monospace;
 		font-size: 14px;
-		height: 36px;
+		height: 24px;
 		justify-content: center;
-		width: 36px;
+		width: 28px;
 	}
 
 	.contact-link-label,
@@ -161,6 +167,12 @@
 		color: var(--ink);
 		font-size: 0.9rem;
 		font-weight: 500;
+		text-transform: lowercase;
+	}
+
+	.contact-link-label::before {
+		color: var(--accent-green);
+		content: '$ ';
 	}
 
 	.contact-link-sub {
@@ -177,7 +189,7 @@
 	}
 
 	.contact-link:hover .contact-link-arrow {
-		color: var(--accent-dark);
+		color: var(--accent-green);
 		transform: translateX(4px);
 	}
 

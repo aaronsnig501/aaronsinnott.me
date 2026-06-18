@@ -14,7 +14,10 @@
 		<div class="timeline-item fade-up">
 			<div class="timeline-date">{t('experience.seniorDate')}</div>
 			<div class="timeline-content">
-				<h3>{t('experience.seniorTitle')}</h3>
+				<h3>
+					{t('experience.seniorTitle')}
+					<span class="senior-badge">senior</span>
+				</h3>
 				<div class="company">888Spectate · 888Sport (evoke)</div>
 				<p>{t('experience.seniorDescription')}</p>
 			</div>
@@ -62,13 +65,17 @@
 
 	.section-label {
 		align-items: center;
-		color: var(--accent-dark);
+		color: var(--accent-green);
 		display: flex;
 		font-size: 0.68rem;
 		gap: 14px;
 		letter-spacing: 0.18em;
 		margin-bottom: 48px;
-		text-transform: uppercase;
+		text-transform: lowercase;
+	}
+
+	.section-label::before {
+		content: '#';
 	}
 
 	.section-label::after {
@@ -111,6 +118,22 @@
 		font-size: 0.85rem;
 		font-weight: 500;
 		margin-bottom: 10px;
+	}
+
+	.senior-badge {
+		background: rgba(187, 154, 247, 0.12);
+		border: 0.5px solid rgba(187, 154, 247, 0.3);
+		border-radius: 3px;
+		color: var(--accent-purple);
+		display: inline-block;
+		font-family: 'Fira Code', monospace;
+		font-size: 0.62rem;
+		font-weight: 400;
+		letter-spacing: 0.06em;
+		margin-left: 8px;
+		padding: 1px 6px;
+		text-transform: lowercase;
+		vertical-align: middle;
 	}
 
 	.timeline-content p {

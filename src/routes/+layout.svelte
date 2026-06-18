@@ -65,7 +65,7 @@
 	</div>
 {:else if isReady}
 	<div id="lang-chooser" aria-labelledby="language-title" aria-modal="true" role="dialog">
-		<span class="chooser-logo">{t('languageChooser.logo')}</span>
+		<span class="chooser-logo">~/aaronsinnott.me $ select_language</span>
 		<h1 id="language-title">
 			{t('languageChooser.promptGa')}<br /><em>{t('languageChooser.promptEn')}</em>
 		</h1>
@@ -151,13 +151,12 @@
 	}
 
 	.chooser-logo {
-		color: var(--text-3);
+		color: var(--accent-green);
 		font-family: 'Fira Code', monospace;
 		font-variant-ligatures: contextual common-ligatures;
 		font-size: 0.8rem;
-		letter-spacing: 0.1em;
+		letter-spacing: 0.02em;
 		position: absolute;
-		text-transform: uppercase;
 		top: 32px;
 		left: 48px;
 	}
@@ -227,7 +226,7 @@
 		font-family: 'Fira Code', monospace;
 		font-variant-ligatures: contextual common-ligatures;
 		letter-spacing: 0.08em;
-		text-transform: uppercase;
+		text-transform: lowercase;
 	}
 
 	.lang-native {

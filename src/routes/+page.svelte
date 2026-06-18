@@ -27,7 +27,7 @@
 <Contact />
 
 <footer>
-	<span>aaron@aaronsinnott.me</span>
+	<span>~/aaronsinnott.me</span>
 	<span>{t('footer.location')}</span>
 </footer>
 

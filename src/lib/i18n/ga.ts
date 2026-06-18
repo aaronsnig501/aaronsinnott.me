@@ -10,12 +10,12 @@ export const ga: Record<keyof typeof en, string> = {
 	'languageChooser.inEnglish': 'In English',
 	'languageChooser.footnote':
 		'Is féidir leat an teanga a athrú am ar bith · You can change language at any time',
-	'language.en': 'English',
-	'language.ga': 'Gaeilge',
-	'nav.about': 'Fúm',
-	'nav.work': 'Obair',
-	'nav.experience': 'Taithí',
-	'nav.contact': 'Teagmháil',
+	'language.en': 'english',
+	'language.ga': 'gaeilge',
+	'nav.about': 'fúm',
+	'nav.work': 'obair',
+	'nav.experience': 'taithí',
+	'nav.contact': 'teagmháil',
 	'hero.eyebrow': 'Forbróir Bogearraí Sinsearach · Loch Garman, Éire',
 	'hero.titleStart': 'Ag tógáil rudaí a',
 	'hero.titleEmphasis': 'mhaireann',
@@ -26,7 +26,7 @@ export const ga: Record<keyof typeof en, string> = {
 	'hero.locationTag': 'Loch Garman → Áit ar bith',
 	'hero.workCta': "Féach ar m'obair →",
 	'hero.scroll': 'Scrollaigh',
-	'about.label': 'Fúm',
+	'about.label': 'fúm',
 	'about.heading': 'Forbróir, abhcóide, agus tógálaí rudaí a mhaireann.',
 	'about.bio1':
 		'Chaith mé deich mbliana ag tógáil bogearraí ag scála — córais praghsála fíor-ama, bonneagar rialúcháin trasna dlínsí éagsúla, agus ailtireachtaí dáilte nach mór a bheith ceart.',
@@ -50,7 +50,7 @@ export const ga: Record<keyof typeof en, string> = {
 	'about.irish': 'Gaeilge (Meánleibhéal)',
 	'about.portuguese': 'Portugáilis (Meánleibhéal)',
 	'about.english': 'Béarla (Dúchasach)',
-	'work.label': 'Obair Roghnaithe',
+	'work.label': 'obair roghnaithe',
 	'work.misneachEyebrow': 'Bunaitheoir & Innealtóir Aonair · 2024–i láthair',
 	'work.liveProduction': 'Beo i dtáirgeadh',
 	'work.misneachDescription':
@@ -63,7 +63,7 @@ export const ga: Record<keyof typeof en, string> = {
 	'work.consoleStatus': 'Spyro the Dragon — 74% críochnaithe',
 	'work.consoleDescription':
 		'Ardán logánaithe foinse oscailte Gaeilge do chluichí atróshamhla. Eastóscann CLI Python táblaí teaghrán buiséad-seasta, bailíochtaíonn srianta fad beart, paistíonn téacs aistrithe, agus gineann déantáin BPS.',
-	'experience.label': 'Taithí',
+	'experience.label': 'taithí',
 	'experience.seniorDate': 'Iúil 2025 — i láthair',
 	'experience.seniorTitle': 'Forbróir Bogearraí Sinsearach',
 	'experience.seniorDescription':
@@ -78,10 +78,10 @@ export const ga: Record<keyof typeof en, string> = {
 	'experience.productTitle': 'Forbróir Táirgí',
 	'experience.productDescription':
 		'Ábhar cúrsa seachadta do bhootcamp lánchruach agus gnéithe nua ardáin forbartha. Scríobh mé an cúrsa Bunghnéithe Python.',
-	'contact.label': 'Teagmháil',
+	'contact.label': 'teagmháil',
 	'contact.headingStart': 'Tógaimis rud éigin',
 	'contact.headingEmphasis': 'atá fiú a thógáil',
 	'contact.copy':
 		'Táim oscailte do róil innealtóireachta sinsearacha agus ar leibhéal foirne, go háirithe i gcórais dháilte, innealtóireacht ardáin, nó áit ar bith a luann doimhneacht theicniúil. Bunaithe i Loch Garman — sásta cianobair nó hibrideach a phlé.',
-	'footer.location': 'Tógtha le hintinn · Loch Garman, Éire'
+	'footer.location': 'built with intent · loch garman, éire'
 };

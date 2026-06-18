@@ -11,7 +11,7 @@
 <section id="work" class="work-section">
 	<div class="section-label">{t('work.label')}</div>
 	<div class="projects-grid">
-		<article class="project-card featured fade-up">
+		<article class="project-card featured labs fade-up">
 			<div class="project-eyebrow">{t('work.misneachEyebrow')}</div>
 			<div class="project-status">
 				<span class="status-dot"></span><span>{t('work.liveProduction')}</span>
@@ -25,7 +25,7 @@
 			</div>
 		</article>
 
-		<article class="project-card fade-up">
+		<article class="project-card personal fade-up">
 			<div class="project-eyebrow">{t('work.emuhubEyebrow')}</div>
 			<div class="project-status">
 				<span class="status-dot"></span><span>{t('work.liveGithubPages')}</span>
@@ -39,7 +39,7 @@
 			</div>
 		</article>
 
-		<article class="project-card fade-up">
+		<article class="project-card labs fade-up">
 			<div class="project-eyebrow">{t('work.consoleEyebrow')}</div>
 			<div class="project-status">
 				<span class="status-dot"></span><span>{t('work.consoleStatus')}</span>
@@ -69,13 +69,17 @@
 
 	.section-label {
 		align-items: center;
-		color: var(--accent-dark);
+		color: var(--accent-green);
 		display: flex;
 		font-size: 0.68rem;
 		gap: 14px;
 		letter-spacing: 0.18em;
 		margin-bottom: 48px;
-		text-transform: uppercase;
+		text-transform: lowercase;
+	}
+
+	.section-label::before {
+		content: '#';
 	}
 
 	.section-label::after {
@@ -108,7 +112,6 @@
 	}
 
 	.project-card::before {
-		background: var(--accent);
 		content: '';
 		height: 2px;
 		left: 0;
@@ -122,6 +125,14 @@
 
 	.project-card:hover::before {
 		transform: scaleX(1);
+	}
+
+	.project-card.personal::before {
+		background: var(--accent-green);
+	}
+
+	.project-card.labs::before {
+		background: var(--accent-purple);
 	}
 
 	.project-card.featured {
@@ -146,20 +157,23 @@
 
 	.project-eyebrow,
 	.project-status {
-		color: var(--accent-dark);
 		font-size: 0.67rem;
 		letter-spacing: 0.12em;
 		margin-bottom: 12px;
-		text-transform: uppercase;
+		text-transform: lowercase;
 	}
 
-	.project-card.featured .project-eyebrow {
-		color: var(--accent);
+	.project-card.personal .project-eyebrow {
+		color: var(--accent-green);
+	}
+
+	.project-card.labs .project-eyebrow {
+		color: var(--accent-purple);
 	}
 
 	.project-status {
 		align-items: center;
-		color: var(--accent);
+		color: var(--accent-green);
 		display: inline-flex;
 		gap: 6px;
 		margin-bottom: 20px;
@@ -167,7 +181,7 @@
 
 	.status-dot {
 		animation: pulse 2s ease infinite;
-		background: var(--accent);
+		background: var(--accent-green);
 		border-radius: 50%;
 		height: 6px;
 		width: 6px;
@@ -209,6 +223,7 @@
 		font-size: 0.65rem;
 		letter-spacing: 0.05em;
 		padding: 3px 10px;
+		text-transform: lowercase;
 	}
 
 	@media (prefers-reduced-motion: reduce) {

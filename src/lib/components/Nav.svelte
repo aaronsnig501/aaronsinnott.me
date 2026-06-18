@@ -35,7 +35,7 @@
 </script>
 
 <nav class:scrolled={hasScrolled} class="site-nav" aria-label="Primary navigation">
-	<a href={resolve('/')} class="nav-logo">aaronsinnott.me</a>
+	<a href={resolve('/')} class="nav-logo">~/aaronsinnott.me</a>
 	<div class="nav-right">
 		<ul class:open={isMenuOpen} class="nav-links" id="primary-nav-links">
 			<li><a href="#about" onclick={closeMenu}>{t('nav.about')}</a></li>
@@ -121,6 +121,7 @@
 		font-size: 0.85rem;
 		letter-spacing: 0.01em;
 		text-decoration: none;
+		text-transform: lowercase;
 		transition: color 0.2s;
 	}
 
@@ -158,6 +159,7 @@
 		gap: 6px;
 		letter-spacing: 0.05em;
 		padding: 5px 12px 5px 8px;
+		text-transform: lowercase;
 		transition:
 			border-color 0.2s,
 			color 0.2s;

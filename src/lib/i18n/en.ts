@@ -8,12 +8,12 @@ export const en = {
 	'languageChooser.inEnglish': 'In English',
 	'languageChooser.footnote':
 		'Is féidir leat an teanga a athrú am ar bith · You can change language at any time',
-	'language.en': 'English',
-	'language.ga': 'Gaeilge',
-	'nav.about': 'About',
-	'nav.work': 'Work',
-	'nav.experience': 'Experience',
-	'nav.contact': 'Contact',
+	'language.en': 'english',
+	'language.ga': 'gaeilge',
+	'nav.about': 'about',
+	'nav.work': 'work',
+	'nav.experience': 'experience',
+	'nav.contact': 'contact',
 	'hero.eyebrow': 'Senior Software Developer · Loch Garman, Éire',
 	'hero.titleStart': 'Building things that',
 	'hero.titleEmphasis': 'persist',
@@ -24,7 +24,7 @@ export const en = {
 	'hero.locationTag': 'Loch Garman → Anywhere',
 	'hero.workCta': 'See my work →',
 	'hero.scroll': 'Scroll',
-	'about.label': 'About',
+	'about.label': 'about',
 	'about.heading': 'Developer, advocate, and builder of things that last.',
 	'about.bio1':
 		"I've spent a decade building software that operates at scale — real-time pricing systems, regulatory infrastructure across multiple jurisdictions, and distributed architectures that have to be right.",
@@ -48,7 +48,7 @@ export const en = {
 	'about.irish': 'Irish (Intermediate)',
 	'about.portuguese': 'Portuguese (Intermediate)',
 	'about.english': 'English (Native)',
-	'work.label': 'Selected Work',
+	'work.label': 'selected work',
 	'work.misneachEyebrow': 'Founder & Solo Engineer · 2024–Present',
 	'work.liveProduction': 'Live in production',
 	'work.misneachDescription':
@@ -61,7 +61,7 @@ export const en = {
 	'work.consoleStatus': 'Spyro the Dragon — 74% complete',
 	'work.consoleDescription':
 		'An open source Irish language localisation platform for retro games. A Python CLI extracts fixed-budget string tables, validates byte-length constraints, patches translated text, and generates BPS artifacts.',
-	'experience.label': 'Experience',
+	'experience.label': 'experience',
 	'experience.seniorDate': 'Jul 2025 — Present',
 	'experience.seniorTitle': 'Senior Software Developer',
 	'experience.seniorDescription':
@@ -76,10 +76,10 @@ export const en = {
 	'experience.productTitle': 'Product Developer',
 	'experience.productDescription':
 		'Delivered course content for a full-stack bootcamp and developed new platform features. Wrote the Python Fundamentals course.',
-	'contact.label': 'Contact',
+	'contact.label': 'contact',
 	'contact.headingStart': "Let's build something",
 	'contact.headingEmphasis': 'worth building',
 	'contact.copy':
 		"I'm open to senior and staff-level engineering roles, particularly in distributed systems, platform engineering, or anywhere that values technical depth. Based in Loch Garman — happy to discuss remote or hybrid.",
-	'footer.location': 'Built with intent · Loch Garman, Éire'
+	'footer.location': 'built with intent · loch garman, éire'
 } as const;

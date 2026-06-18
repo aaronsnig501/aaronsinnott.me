@@ -11,7 +11,7 @@
 
 <section class="hero" aria-labelledby="hero-title">
 	<div class="hero-content">
-		<p class="hero-eyebrow hero-reveal">{t('hero.eyebrow')}</p>
+		<p class="hero-eyebrow hero-reveal"><span aria-hidden="true">▸</span>{t('hero.eyebrow')}</p>
 		<h1 id="hero-title" class="hero-reveal">
 			{t('hero.titleStart')} <em>{t('hero.titleEmphasis')}</em>,<br />{t('hero.titleEnd')}
 		</h1>
@@ -107,15 +107,7 @@
 		gap: 10px;
 		letter-spacing: 0.16em;
 		margin: 0 0 20px;
-		text-transform: uppercase;
-	}
-
-	.hero-eyebrow::before {
-		background: var(--accent);
-		content: '';
-		display: inline-block;
-		height: 1px;
-		width: 24px;
+		text-transform: lowercase;
 	}
 
 	.hero h1 {
@@ -160,6 +152,7 @@
 		font-size: 0.72rem;
 		letter-spacing: 0.06em;
 		padding: 6px 14px;
+		text-transform: lowercase;
 	}
 
 	.tag-cyan {
@@ -233,7 +226,7 @@
 		gap: 10px;
 		letter-spacing: 0.1em;
 		position: absolute;
-		text-transform: uppercase;
+		text-transform: lowercase;
 	}
 
 	.scroll-line {

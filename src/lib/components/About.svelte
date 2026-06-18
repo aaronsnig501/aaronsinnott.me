@@ -65,13 +65,17 @@
 
 	.section-label {
 		align-items: center;
-		color: var(--accent-dark);
+		color: var(--accent-green);
 		display: flex;
 		font-size: 0.68rem;
 		gap: 14px;
 		letter-spacing: 0.18em;
 		margin-bottom: 48px;
-		text-transform: uppercase;
+		text-transform: lowercase;
+	}
+
+	.section-label::before {
+		content: '#';
 	}
 
 	.section-label::after {
@@ -121,7 +125,7 @@
 		font-size: 0.68rem;
 		letter-spacing: 0.1em;
 		margin-bottom: 4px;
-		text-transform: uppercase;
+		text-transform: lowercase;
 	}
 
 	.fact-value {
