@@ -17,9 +17,9 @@
 		</h1>
 		<p class="hero-sub hero-reveal">{t('hero.subheading')}</p>
 		<div class="hero-tags hero-reveal">
-			<span class="tag tag-green">Python · Java · Distributed Systems</span>
-			<span class="tag tag-green">Kafka · AWS · NestJS · SvelteKit</span>
-			<span class="tag tag-amber">{t('hero.languageTag')}</span>
+			<span class="tag tag-cyan">Python · Java · Distributed Systems</span>
+			<span class="tag tag-cyan">Kafka · AWS · NestJS · SvelteKit</span>
+			<span class="tag tag-yellow">{t('hero.languageTag')}</span>
 			<span class="tag tag-neutral">{t('hero.locationTag')}</span>
 		</div>
 		<div class="hero-cta hero-reveal">
@@ -46,7 +46,7 @@
 	}
 
 	.hero::before {
-		background: radial-gradient(circle, rgba(29, 158, 117, 0.08) 0%, transparent 70%);
+		background: radial-gradient(circle, rgba(125, 207, 255, 0.12) 0%, transparent 70%);
 		content: '';
 		height: 600px;
 		pointer-events: none;
@@ -160,15 +160,15 @@
 		padding: 6px 14px;
 	}
 
-	.tag-green {
+	.tag-cyan {
 		background: var(--accent-bg);
-		border-color: rgba(15, 110, 86, 0.2);
+		border-color: rgba(125, 207, 255, 0.24);
 		color: var(--accent-dark);
 	}
 
-	.tag-amber {
+	.tag-yellow {
 		background: var(--amber-bg);
-		border-color: rgba(186, 117, 23, 0.2);
+		border-color: rgba(224, 175, 104, 0.24);
 		color: var(--amber);
 	}
 
@@ -201,17 +201,18 @@
 	}
 
 	.btn-primary {
-		background: var(--ink);
-		color: var(--white);
+		background: var(--bg-3);
+		color: var(--text);
 	}
 
 	.btn-primary:hover {
-		background: var(--ink-2);
+		background: var(--accent);
+		color: var(--bg-3);
 	}
 
 	.btn-secondary {
 		background: transparent;
-		border: 0.5px solid rgba(0, 0, 0, 0.25);
+		border: 0.5px solid var(--rule);
 		color: var(--ink);
 	}
 
