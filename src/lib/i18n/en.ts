@@ -74,7 +74,7 @@ export const en = {
 	'work.aistriuEyebrow': 'aistriú · in progress',
 	'work.aistriuStatus': 'actively contributing translations on Weblate',
 	'work.aistriuDescription':
-		'Tracks the state of Irish language translations across major open source projects including Firefox, GNOME, LibreOffice, KDE, and Organic Maps, pulling live data from Weblate and Pontoon to show where Irish is present, missing, and where effort would make the biggest difference.',
+		"Irish is absent from most of the software people use every day — not because translation is impossible, but because no one is coordinating the effort. Aistriú tracks the state of Irish language translations across major open source projects including Firefox, GNOME, LibreOffice, KDE, and Organic Maps, pulling live data from Weblate and Pontoon. Tiered contribution guides cover every level of technical ability. Irish is not absent from open source software because speakers don't exist. It's absent because the work is fragmented and invisible. Aistriú makes it visible.",
 	'experience.label': 'experience',
 	'experience.seniorDate': 'Jul 2025 — Present',
 	'experience.seniorTitle': 'Senior Software Developer',

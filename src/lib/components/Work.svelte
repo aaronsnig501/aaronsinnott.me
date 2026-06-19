@@ -86,11 +86,9 @@
 
 		<article class="project-card labs fade-up">
 			<div class="project-eyebrow">{t('work.aistriuEyebrow')}</div>
-			<div class="project-status">
-				<span class="status-dot"></span><span>{t('work.aistriuStatus')}</span>
-			</div>
 			<h2 class="project-title">Aistriú</h2>
 			<p class="project-desc">{t('work.aistriuDescription')}</p>
+			<p class="project-weblate-line">▸ {t('work.aistriuStatus')}</p>
 			<div class="project-tech">
 				<span>sveltekit</span><span>fastapi</span><span>weblate api</span><span>pontoon api</span
 				><span>valkey</span><span>render.io</span>
@@ -108,6 +106,7 @@
 
 	.project-eyebrow,
 	.project-status,
+	.project-weblate-line,
 	.subsection-label,
 	.project-tech span {
 		font-family: 'Fira Code', monospace;
@@ -263,6 +262,13 @@
 		line-height: 1.7;
 		margin: 0 0 20px;
 		max-width: 640px;
+	}
+
+	.project-weblate-line {
+		color: var(--accent);
+		font-size: 0.75rem;
+		letter-spacing: 0.02em;
+		margin: -6px 0 16px;
 	}
 
 	.project-tech {
