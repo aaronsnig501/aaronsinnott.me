@@ -76,7 +76,7 @@ export const ga: Record<keyof typeof en, string> = {
 	'work.aistriuEyebrow': 'aistriú · ar siúl',
 	'work.aistriuStatus': 'ranníocaíochtaí gníomhacha ar Weblate',
 	'work.aistriuDescription':
-		'Déanann sé monatóireacht ar staid aistriúchán Gaeilge trasna mórthionscadal foinse oscailte lena n-áirítear Firefox, GNOME, LibreOffice, KDE, agus Organic Maps, ag tarraingt sonraí beo ó Weblate agus Pontoon chun a thaispeáint cá bhfuil an Ghaeilge i láthair, cá bhfuil sí ar iarraidh, agus cá ndéanfadh iarracht an difríocht is mó.',
+		"Tá an Ghaeilge as láthair ón gcuid is mó de na bogearraí a úsáideann daoine gach lá — ní toisc nach féidir aistriúchán a dhéanamh, ach toisc nach bhfuil éinne ag comhordú an iarrachta. Déanann Aistriú monatóireacht ar staid aistriúchán Gaeilge trasna mórthionscadal foinse oscailte lena n-áirítear Firefox, GNOME, LibreOffice, KDE, agus Organic Maps, ag tarraingt sonraí beo ó Weblate agus Pontoon. Clúdaíonn treoracha ranníocaíochta sraitheacha gach leibhéal cumais theicniúil. Níl an Ghaeilge as láthair ó bhogearraí foinse oscailte toisc nach bhfuil cainteoirí ann. Tá sí as láthair toisc go bhfuil an obair scaipthe agus dofheicthe. Déanann Aistriú infheicthe í.",
 	'experience.label': 'taithí',
 	'experience.seniorDate': 'Iúil 2025 — i láthair',
 	'experience.seniorTitle': 'Forbróir Bogearraí Sinsearach',
