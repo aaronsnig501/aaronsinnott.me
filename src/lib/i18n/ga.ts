@@ -51,10 +51,6 @@ export const ga: Record<keyof typeof en, string> = {
 	'about.portuguese': 'Portugáilis (Meánleibhéal)',
 	'about.english': 'Béarla (Dúchasach)',
 	'work.label': 'obair roghnaithe',
-	'work.misneachEyebrow': 'Bunaitheoir & Innealtóir Aonair · 2024–i láthair',
-	'work.liveProduction': 'Beo i dtáirgeadh',
-	'work.misneachDescription':
-		'Ardán normalúcháin Gaeilge tógtha chun úsáid laethúil na Gaeilge in áiteanna tráchtála a dhéanamh sábháilte go sóisialta agus tacaithe go praiticiúil. Greamáin fuinneoige, suaitheantas foirne, uirlisí feachtais, anailísíocht iompraíochta, agus banc frásaí móibíleach — iomlán tógtha agus imscartha go haonair ar AWS.',
 	'work.emuhubEyebrow': 'forbróir aonair · ar siúl',
 	'work.liveGithubPages': 'beo · github pages',
 	'work.emuhubDescription':
@@ -63,10 +59,24 @@ export const ga: Record<keyof typeof en, string> = {
 	'work.ceangalStatus': 'beo · ceangal.app',
 	'work.ceangalDescription':
 		'Cluiche focal Gaeilge bunaithe ar fhormáid NYT Connections — 16 focal, ceithre ghrúpa folaithe, ceithre iarracht. Gaeilge ar dtús de réir réamhshocraithe, le litriú traidisiúnta curtha i bhfeidhm ag am rite. Beo ar an ngréasán; tógálacha dúchasacha iOS agus Android ar siúl.',
-	'work.consoleEyebrow': 'Foinse Oscailte · Ar Siúl',
-	'work.consoleStatus': 'Spyro the Dragon — 74% críochnaithe',
+	'work.labsDescription':
+		"Is eagraíocht foinse oscailte í Athbheochan Labs ag tógáil bonneagair digiteach d'athbheochan na Gaeilge — deartha ón tús le bheith inatáirgthe ag aon phobal teanga. Tá an ciseal teicniúil ann. Atá in easnamh ná an ciseal sóisialta: na huirlisí a dhéanann sé gnáth úsáid na Gaeilge in áiteanna poiblí, in earraí digiteacha, i gcluichí, agus i saol laethúil. Sin an bhearna atá á tógáil againn. Tionscadail reatha: Foclóir Póca, Líosta, Gaeilge sa Chonsol, agus Aistriú. Tuilleadh ag athbheochan.irish.",
+	'work.focloirEyebrow': 'foclóir póca · 2026',
+	'work.focloirStatus': 'beo · focloir.athbheochan.irish',
+	'work.focloirDescription':
+		'Foclóir Gaeilge-Béarla saor, foinse oscailte, ag comhiomlánú sonraí Fhoras na Gaeilge trí chiseal API SvelteKit saincheaptha. Aip Android ar siúl trí Capacitor.',
+	'work.liostaEyebrow': 'líosta · 2026',
+	'work.liostaStatus': 'beo · liosta.athbheochan.irish',
+	'work.liostaDescription':
+		'PWA liosta siopadóireachta agus todo Gaeilge, oibre as líne ar dtús. Tá gach cóip UI as Gaeilge gan aisfhilleadh Béarla, agus bainistítear an staid go hiomlán i localStorage gan chúltaca.',
+	'work.consoleEyebrow': 'gaeilge sa chonsol · ar siúl',
+	'work.consoleStatus': 'spyro the dragon — 74% críochnaithe',
 	'work.consoleDescription':
 		'Ardán logánaithe foinse oscailte Gaeilge do chluichí atróshamhla. Eastóscann CLI Python táblaí teaghrán buiséad-seasta, bailíochtaíonn srianta fad beart, paistíonn téacs aistrithe, agus gineann déantáin BPS.',
+	'work.aistriuEyebrow': 'aistriú · ar siúl',
+	'work.aistriuStatus': 'ranníocaíochtaí gníomhacha ar Weblate',
+	'work.aistriuDescription':
+		'Déanann sé monatóireacht ar staid aistriúchán Gaeilge trasna mórthionscadal foinse oscailte lena n-áirítear Firefox, GNOME, LibreOffice, KDE, agus Organic Maps, ag tarraingt sonraí beo ó Weblate agus Pontoon chun a thaispeáint cá bhfuil an Ghaeilge i láthair, cá bhfuil sí ar iarraidh, agus cá ndéanfadh iarracht an difríocht is mó.',
 	'experience.label': 'taithí',
 	'experience.seniorDate': 'Iúil 2025 — i láthair',
 	'experience.seniorTitle': 'Forbróir Bogearraí Sinsearach',

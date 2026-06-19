@@ -49,10 +49,6 @@ export const en = {
 	'about.portuguese': 'Portuguese (Intermediate)',
 	'about.english': 'English (Native)',
 	'work.label': 'selected work',
-	'work.misneachEyebrow': 'Founder & Solo Engineer · 2024–Present',
-	'work.liveProduction': 'Live in production',
-	'work.misneachDescription':
-		'An Irish language normalisation platform built to make everyday use of Irish in commercial spaces socially safe and practically supported. Window stickers, staff badges, campaign tooling, behavioural analytics, and a mobile phrase bank — all built and deployed solo on AWS.',
 	'work.emuhubEyebrow': 'solo developer · in progress',
 	'work.liveGithubPages': 'live · github pages',
 	'work.emuhubDescription':
@@ -61,10 +57,24 @@ export const en = {
 	'work.ceangalStatus': 'live · ceangal.app',
 	'work.ceangalDescription':
 		'Irish language word game based on the NYT Connections format — 16 words, four hidden groups, four attempts. Irish-forward by default with traditional orthography applied at runtime. Live on the web; native iOS and Android builds in progress.',
-	'work.consoleEyebrow': 'Open Source · In Progress',
-	'work.consoleStatus': 'Spyro the Dragon — 74% complete',
+	'work.labsDescription':
+		"Athbheochan Labs is an open source organisation building digital infrastructure for Irish language normalisation — designed from the outset to be replicable by any language community. The technical layer exists. What's missing is the social layer: the tools that make it normal to use Irish in public spaces, in digital products, in games, and in daily life. That's the gap we're building for. Current projects: Foclóir Póca (Irish dictionary), Líosta (Irish language PWA), Gaeilge sa Chonsol (retro game translations), and Aistriú (open source translation visibility). More at athbheochan.irish.",
+	'work.focloirEyebrow': 'foclóir póca · 2026',
+	'work.focloirStatus': 'live · focloir.athbheochan.irish',
+	'work.focloirDescription':
+		'A free, open source Irish-English dictionary aggregating Foras na Gaeilge data via a custom SvelteKit API layer. Android app in progress via Capacitor.',
+	'work.liostaEyebrow': 'líosta · 2026',
+	'work.liostaStatus': 'live · liosta.athbheochan.irish',
+	'work.liostaDescription':
+		'An offline-first Irish language shopping list and todo PWA. All UI copy is in Irish with no English fallback, and state is managed entirely in localStorage with no backend.',
+	'work.consoleEyebrow': 'gaeilge sa chonsol · in progress',
+	'work.consoleStatus': 'spyro the dragon — 74% complete',
 	'work.consoleDescription':
 		'An open source Irish language localisation platform for retro games. A Python CLI extracts fixed-budget string tables, validates byte-length constraints, patches translated text, and generates BPS artifacts.',
+	'work.aistriuEyebrow': 'aistriú · in progress',
+	'work.aistriuStatus': 'actively contributing translations on Weblate',
+	'work.aistriuDescription':
+		'Tracks the state of Irish language translations across major open source projects including Firefox, GNOME, LibreOffice, KDE, and Organic Maps, pulling live data from Weblate and Pontoon to show where Irish is present, missing, and where effort would make the biggest difference.',
 	'experience.label': 'experience',
 	'experience.seniorDate': 'Jul 2025 — Present',
 	'experience.seniorTitle': 'Senior Software Developer',
