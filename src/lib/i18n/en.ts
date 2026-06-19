@@ -68,9 +68,9 @@ export const en = {
 	'work.liostaDescription':
 		'An offline-first Irish language shopping list and todo PWA. All UI copy is in Irish with no English fallback — the language is assumed, not explained. State managed entirely in localStorage with no backend. Live as a PWA; Android release via Google Play in progress.',
 	'work.consoleEyebrow': 'gaeilge sa chonsol · in progress',
-	'work.consoleStatus': 'spyro the dragon — 74% complete',
+	'work.consoleStatus': 'spyro the dragon — 50% complete',
 	'work.consoleDescription':
-		'An open source Irish language localisation platform for retro games. A Python CLI extracts fixed-budget string tables, validates byte-length constraints, patches translated text, and generates BPS artifacts.',
+		'An open source project translating retro games into Irish. Currently translating Spyro the Dragon (PS1), now 50% complete, and Super Mario Bros. (NES). A Python CLI tool abstracts the full ROM hacking workflow so future contributors can add new games without reverse engineering the process.',
 	'work.aistriuEyebrow': 'aistriú · in progress',
 	'work.aistriuStatus': 'actively contributing translations on Weblate',
 	'work.aistriuDescription':
