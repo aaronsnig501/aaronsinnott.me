@@ -40,17 +40,37 @@
 			</div>
 		</article>
 
-		<article class="project-card labs fade-up">
-			<div class="project-eyebrow">{t('work.misneachEyebrow')}</div>
-			<div class="project-status">
-				<span class="status-dot"></span><span>{t('work.liveProduction')}</span>
+		<div class="labs-group">
+			<div class="subsection-label">open source · athbheochan.irish</div>
+			<div class="org-panel fade-up">
+				<p class="org-description">{t('work.labsDescription')}</p>
 			</div>
-			<h2 class="project-title">Misneach</h2>
-			<p class="project-desc">{t('work.misneachDescription')}</p>
+		</div>
+
+		<article class="project-card labs fade-up">
+			<div class="project-eyebrow">{t('work.focloirEyebrow')}</div>
+			<div class="project-status">
+				<span class="status-dot"></span><span>{t('work.focloirStatus')}</span>
+			</div>
+			<h2 class="project-title">Foclóir Póca</h2>
+			<p class="project-desc">{t('work.focloirDescription')}</p>
 			<div class="project-tech">
-				<span>nestjs microservices</span><span>sveltekit</span><span>capacitor</span><span
-					>aws ec2</span
-				><span>mariadb</span><span>plausible</span>
+				<span>sveltekit</span><span>typescript</span><span>capacitor</span><span>aws amplify</span
+				><span>route 53</span>
+			</div>
+		</article>
+
+		<article class="project-card labs fade-up">
+			<div class="project-eyebrow">{t('work.liostaEyebrow')}</div>
+			<div class="project-status">
+				<span class="status-dot"></span><span>{t('work.liostaStatus')}</span>
+			</div>
+			<h2 class="project-title">Líosta</h2>
+			<p class="project-desc">{t('work.liostaDescription')}</p>
+			<div class="project-tech">
+				<span>sveltekit</span><span>capacitor</span><span>vite-plugin-pwa</span><span
+					>aws amplify</span
+				><span>localstorage</span>
 			</div>
 		</article>
 
@@ -66,6 +86,19 @@
 				><span>bps patching</span>
 			</div>
 		</article>
+
+		<article class="project-card labs fade-up">
+			<div class="project-eyebrow">{t('work.aistriuEyebrow')}</div>
+			<div class="project-status">
+				<span class="status-dot"></span><span>{t('work.aistriuStatus')}</span>
+			</div>
+			<h2 class="project-title">Aistriú</h2>
+			<p class="project-desc">{t('work.aistriuDescription')}</p>
+			<div class="project-tech">
+				<span>sveltekit</span><span>fastapi</span><span>weblate api</span><span>pontoon api</span
+				><span>valkey</span><span>render.io</span>
+			</div>
+		</article>
 	</div>
 </section>
 
@@ -78,6 +111,7 @@
 
 	.project-eyebrow,
 	.project-status,
+	.subsection-label,
 	.project-tech span {
 		font-family: 'Fira Code', monospace;
 		font-variant-ligatures: contextual common-ligatures;
@@ -87,6 +121,50 @@
 		display: flex;
 		flex-direction: column;
 		gap: 16px;
+	}
+
+	.labs-group {
+		margin-top: 24px;
+	}
+
+	.subsection-label {
+		align-items: center;
+		color: var(--text-3);
+		display: flex;
+		font-size: 0.62rem;
+		gap: 12px;
+		letter-spacing: 0.16em;
+		margin-bottom: 20px;
+		text-transform: lowercase;
+	}
+
+	.subsection-label::before {
+		color: var(--accent-green);
+		content: '#';
+	}
+
+	.subsection-label::after {
+		background: var(--rule);
+		content: '';
+		flex: 1;
+		height: 0.5px;
+	}
+
+	.org-description {
+		color: var(--text-2);
+		font-family: 'Fraunces', Georgia, serif;
+		font-size: 0.95rem;
+		font-style: italic;
+		line-height: 1.75;
+		margin: 0;
+	}
+
+	.org-panel {
+		background: var(--bg-3);
+		border: 1px solid var(--accent-border);
+		border-radius: 4px;
+		margin-bottom: 0;
+		padding: 20px 24px;
 	}
 
 	.project-card {
