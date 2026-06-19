@@ -70,7 +70,7 @@
 			<div class="project-tech">
 				<span>sveltekit</span><span>capacitor</span><span>vite-plugin-pwa</span><span
 					>aws amplify</span
-				><span>localstorage</span>
+				>
 			</div>
 		</article>
 
