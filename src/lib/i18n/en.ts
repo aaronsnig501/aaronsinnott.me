@@ -66,7 +66,7 @@ export const en = {
 	'work.liostaEyebrow': 'líosta · 2026',
 	'work.liostaStatus': 'live · liosta.athbheochan.irish',
 	'work.liostaDescription':
-		'An offline-first Irish language shopping list and todo PWA. All UI copy is in Irish with no English fallback, and state is managed entirely in localStorage with no backend.',
+		'An offline-first Irish language shopping list and todo PWA. All UI copy is in Irish with no English fallback — the language is assumed, not explained. State managed entirely in localStorage with no backend. Live as a PWA; Android release via Google Play in progress.',
 	'work.consoleEyebrow': 'gaeilge sa chonsol · in progress',
 	'work.consoleStatus': 'spyro the dragon — 74% complete',
 	'work.consoleDescription':

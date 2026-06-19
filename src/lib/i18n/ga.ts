@@ -68,7 +68,7 @@ export const ga: Record<keyof typeof en, string> = {
 	'work.liostaEyebrow': 'líosta · 2026',
 	'work.liostaStatus': 'beo · liosta.athbheochan.irish',
 	'work.liostaDescription':
-		'PWA liosta siopadóireachta agus todo Gaeilge, oibre as líne ar dtús. Tá gach cóip UI as Gaeilge gan aisfhilleadh Béarla, agus bainistítear an staid go hiomlán i localStorage gan chúltaca.',
+		'PWA liosta siopadóireachta agus todo Gaeilge, oibre as líne ar dtús. Tá gach cóip UI as Gaeilge gan aisfhilleadh Béarla — glactar leis an teanga, ní mhínítear í. Bainistítear an staid go hiomlán i localStorage gan chúltaca. Beo mar PWA; eisiúint Android trí Google Play ar siúl.',
 	'work.consoleEyebrow': 'gaeilge sa chonsol · ar siúl',
 	'work.consoleStatus': 'spyro the dragon — 74% críochnaithe',
 	'work.consoleDescription':
