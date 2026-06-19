@@ -70,9 +70,9 @@ export const ga: Record<keyof typeof en, string> = {
 	'work.liostaDescription':
 		'PWA liosta siopadóireachta agus todo Gaeilge, oibre as líne ar dtús. Tá gach cóip UI as Gaeilge gan aisfhilleadh Béarla — glactar leis an teanga, ní mhínítear í. Bainistítear an staid go hiomlán i localStorage gan chúltaca. Beo mar PWA; eisiúint Android trí Google Play ar siúl.',
 	'work.consoleEyebrow': 'gaeilge sa chonsol · ar siúl',
-	'work.consoleStatus': 'spyro the dragon — 74% críochnaithe',
+	'work.consoleStatus': 'spyro the dragon — 50% críochnaithe',
 	'work.consoleDescription':
-		'Ardán logánaithe foinse oscailte Gaeilge do chluichí atróshamhla. Eastóscann CLI Python táblaí teaghrán buiséad-seasta, bailíochtaíonn srianta fad beart, paistíonn téacs aistrithe, agus gineann déantáin BPS.',
+		'Tionscadal foinse oscailte ag aistriú cluichí atróshamhla go Gaeilge. Tá Spyro the Dragon (PS1), atá 50% críochnaithe anois, agus Super Mario Bros. (NES) á n-aistriú faoi láthair. Déanann uirlis Python CLI an sreabhadh oibre haiceála ROM iomlán a astrú ionas gur féidir le ranníocóirí sa todhchaí cluichí nua a chur leis gan an próiseas a aisiompú.',
 	'work.aistriuEyebrow': 'aistriú · ar siúl',
 	'work.aistriuStatus': 'ranníocaíochtaí gníomhacha ar Weblate',
 	'work.aistriuDescription':

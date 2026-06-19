@@ -76,9 +76,6 @@
 
 		<article class="project-card labs fade-up">
 			<div class="project-eyebrow">{t('work.consoleEyebrow')}</div>
-			<div class="project-status">
-				<span class="status-dot"></span><span>{t('work.consoleStatus')}</span>
-			</div>
 			<h2 class="project-title">Gaeilge sa Chonsol</h2>
 			<p class="project-desc">{t('work.consoleDescription')}</p>
 			<div class="project-tech">
