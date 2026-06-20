@@ -27,17 +27,17 @@ export const en = {
 	'about.label': 'about',
 	'about.heading': 'Developer, advocate, and builder of things that last.',
 	'about.bio1':
-		"I've spent a decade building software that operates at scale — real-time pricing systems, regulatory infrastructure across multiple jurisdictions, and distributed architectures that have to be right.",
+		"I've spent over a decade building distributed, real-time systems in high-stakes production environments. I was promoted to Senior in 2025 during the delivery of a critical Kafka-based feed architecture at 888Spectate.",
 	'about.bio2':
-		"Outside of work, I'm building infrastructure for language revival. Not language learning — revival. The distinction matters. Misneach is a platform to make everyday Irish use in commercial spaces socially safe. The ROM hacks show that revival can happen anywhere, even in a 1985 Nintendo cartridge.",
+		'Outside of employment, I ship independent products — Ceangal, a live Irish language word game, and Foclóir Póca, an open source Irish dictionary — as part of a broader mission to normalise Irish language use in digital and everyday spaces.',
 	'about.bio3':
 		'I believe good engineering culture requires someone willing to name the problems others are thinking but not saying. In practice that means retrospectives, implementation reviews, and knowing which battles are worth having and which forum to have them in.',
 	'about.bio4':
 		"I'm looking for roles where I can drive technical direction as well as deliver, ideally somewhere that values both depth and purpose.",
 	'about.currentlyLabel': 'Currently',
 	'about.currentlyValue': 'Senior Software Developer at 888Spectate · 888Sport (evoke)',
-	'about.alsoBuildingLabel': 'Also building',
-	'about.alsoBuildingValue': 'Misneach — Irish Language Normalisation Platform',
+	'about.alsoBuildingLabel': 'Currently building',
+	'about.alsoBuildingValue': 'Ceangal · Foclóir Póca · Líosta · Aistriú · Athbheochan Labs · Misneach',
 	'about.buildingTowardLabel': 'Building toward',
 	'about.buildingTowardValue':
 		'An open methodology for language revival — ROM hacks, subtitle translation, community tooling, Gaeltacht infrastructure. Replicable by any language community.',
