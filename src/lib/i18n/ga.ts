@@ -29,17 +29,17 @@ export const ga: Record<keyof typeof en, string> = {
 	'about.label': 'fúm',
 	'about.heading': 'Forbróir, abhcóide, agus tógálaí rudaí a mhaireann.',
 	'about.bio1':
-		'Chaith mé deich mbliana ag tógáil bogearraí ag scála — córais praghsála fíor-ama, bonneagar rialúcháin trasna dlínsí éagsúla, agus ailtireachtaí dáilte nach mór a bheith ceart.',
+		'Chaith mé breis agus deich mbliana ag tógáil córais dháilte, fíor-ama i dtimpeallachtaí táirgeachta ardriosca. Fuair mé ardú céime go Sinsearach in 2025 le linn ailtireacht bheathaithe chriticiúil bunaithe ar Kafka a sheachadadh ag 888Spectate.',
 	'about.bio2':
-		"Lasmuigh den obair, tógaim bonneagar d'athbheochan teanga. Ní foghlaim teanga é — athbheochan. Tá an difríocht tábhachtach. Is ardán é Misneach chun úsáid laethúil na Gaeilge in áiteanna tráchtála a dhéanamh sábháilte go sóisialta.",
+		"Lasmuigh den fhostaíocht, seolaim táirgí neamhspleácha — Ceangal, cluiche focal Gaeilge beo, agus Foclóir Póca, foclóir Gaeilge foinse oscailte — mar chuid de mhisean níos leithne chun úsáid na Gaeilge a normalú i spásanna digiteacha agus laethúla.",
 	'about.bio3':
 		'Creidim go n-éilíonn cultúr maith innealtóireachta duine atá sásta ainm a thabhairt ar na fadhbanna atá á gceapadh ag daoine eile ach nach bhfuil á rá. I ngníomh, ciallaíonn sin athbhreithnithe agus fios a bheith agat cén fóram atá ceart.',
 	'about.bio4':
 		'Táim ag lorg ról inar féidir liom treo teicniúil a thiomáint chomh maith le seachadadh, go hidéalach in áit a luann doimhneacht agus cuspóir araon.',
 	'about.currentlyLabel': 'Faoi láthair',
 	'about.currentlyValue': 'Forbróir Bogearraí Sinsearach ag 888Spectate · 888Sport (evoke)',
-	'about.alsoBuildingLabel': 'Ag tógáil freisin',
-	'about.alsoBuildingValue': 'Misneach — Ardán Normalúcháin na Gaeilge',
+	'about.alsoBuildingLabel': 'Á thógáil faoi láthair',
+	'about.alsoBuildingValue': 'Ceangal · Foclóir Póca · Líosta · Aistriú · Athbheochan Labs · Misneach',
 	'about.buildingTowardLabel': 'Ag tógáil i dtreo',
 	'about.buildingTowardValue':
 		"Modheolaíocht oscailte d'athbheochan teanga — haiceanna ROM, aistriúchán fotheideal, uirlisí pobail, bonneagar Gaeltachta. Inatáirgthe ag aon phobal teanga.",
