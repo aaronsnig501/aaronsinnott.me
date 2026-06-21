@@ -32,7 +32,7 @@
 			</div>
 		</div>
 		<div class="timeline-item fade-up">
-			<div class="timeline-date">Jun 2019 — Mar 2021</div>
+			<div class="timeline-date">{t('experience.mentorDate')}</div>
 			<div class="timeline-content">
 				<h3>{t('experience.mentorTitle')}</h3>
 				<div class="company">Code Institute</div>
@@ -40,11 +40,19 @@
 			</div>
 		</div>
 		<div class="timeline-item fade-up">
-			<div class="timeline-date">Jan 2016 — May 2019</div>
+			<div class="timeline-date">{t('experience.productDate')}</div>
 			<div class="timeline-content">
 				<h3>{t('experience.productTitle')}</h3>
 				<div class="company">Code Institute</div>
 				<p>{t('experience.productDescription')}</p>
+			</div>
+		</div>
+		<div class="timeline-item fade-up">
+			<div class="timeline-date">{t('experience.earlyDate')}</div>
+			<div class="timeline-content">
+				<h3>{t('experience.earlyTitle')}</h3>
+				<div class="company">Scurri · TSSG</div>
+				<p>{t('experience.earlyDescription')}</p>
 			</div>
 		</div>
 	</div>
