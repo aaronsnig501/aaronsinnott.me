@@ -86,12 +86,18 @@ export const ga: Record<keyof typeof en, string> = {
 	'experience.softwareTitle': 'Forbróir Bogearraí',
 	'experience.softwareDescription':
 		'D’oibrigh mé ar theachtaireachtaí Kafka, seachadadh corrlaigh fíor-ama, seoltaí margaidh, comhtháthuithe comhlíonta, córais cashout, agus imirce seirbhíse Python go Sanic aisioncrónach.',
+	'experience.mentorDate': 'Meitheamh 2019 — Márta 2021',
 	'experience.mentorTitle': 'Meantóir',
 	'experience.mentorDescription':
-		'Meantóireacht ar mhic léinn trí thimthriallta tionscadail iomlána — riachtanais, ailtireacht, athbhreithniú cód, agus ullmhúchán agallamh.',
+		'Meantóireacht ar mhic léinn trí thimthriallta tionscadail iomlána — bailiú riachtanas, scéalta úsáideora, ERDanna, sreangfhrámaí, léaráidí sreafa, uirlisí bainistíochta tionscadail, athbhreithniú cód, agus ullmhúchán agallamh.',
+	'experience.productDate': 'Eanáir 2016 — Bealtaine 2019',
 	'experience.productTitle': 'Forbróir Táirgí',
 	'experience.productDescription':
-		'Ábhar cúrsa seachadta do bhootcamp lánchruach agus gnéithe nua ardáin forbartha. Scríobh mé an cúrsa Bunghnéithe Python.',
+		'Ábhar cúrsa seachadta do bhootcamp forbartha lánchruach agus gnéithe nua ardáin forbartha. Scríobh mé an cúrsa Bunghnéithe Python, chomhtháthaigh mé uirlisí foghlama seachtracha, agus thóg mé tionscadail mheasúnaithe do mhic léinn.',
+	'experience.earlyDate': 'Iúil 2013 — Eanáir 2016',
+	'experience.earlyTitle': 'Tús Gairme — Intéirneach & Forbróir Sóisearach',
+	'experience.earlyDescription':
+		'Scurri: taithí luath QA agus innealtóireachta sóisearaí i dtimpeallacht seachadta Python/Django. TSSG: tionscadail chliaint lena n-áirítear SDK sruthaithe DRM, deais sláinte bonneagair, agus inneall moltaí ionaid.',
 	'contact.label': 'teagmháil',
 	'contact.headingStart': 'Tógaimis rud éigin',
 	'contact.headingEmphasis': 'atá fiú a thógáil',

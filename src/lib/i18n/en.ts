@@ -84,12 +84,18 @@ export const en = {
 	'experience.softwareTitle': 'Software Developer',
 	'experience.softwareDescription':
 		'Worked across Kafka-based messaging, real-time odds delivery, market launches, compliance integrations, cashout systems, and async Python service migration.',
+	'experience.mentorDate': 'Jun 2019 — Mar 2021',
 	'experience.mentorTitle': 'Mentor',
 	'experience.mentorDescription':
-		'Mentored students through full project lifecycles — requirements, architecture, code review, and interview preparation.',
+		'Mentored students through full project lifecycles — requirements gathering, user stories, ERDs, wireframes, flow diagrams, project management tooling, code review, and interview preparation.',
+	'experience.productDate': 'Jan 2016 — May 2019',
 	'experience.productTitle': 'Product Developer',
 	'experience.productDescription':
-		'Delivered course content for a full-stack bootcamp and developed new platform features. Wrote the Python Fundamentals course.',
+		'Delivered course content for a full-stack developer bootcamp and developed new platform features. Wrote the Python Fundamentals course, integrated external learning tools, and built assessed student projects.',
+	'experience.earlyDate': 'Jul 2013 — Jan 2016',
+	'experience.earlyTitle': 'Early Career — Intern & Junior Developer',
+	'experience.earlyDescription':
+		'Scurri: early QA and junior engineering experience in a Python/Django delivery environment. TSSG: client projects including a DRM media streaming SDK, infrastructure health dashboard, and venue recommendation engine.',
 	'contact.label': 'contact',
 	'contact.headingStart': "Let's build something",
 	'contact.headingEmphasis': 'worth building',
