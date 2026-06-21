@@ -42,12 +42,12 @@
 				</span>
 				<span class="contact-link-arrow">→</span>
 			</a>
-			<a href="https://github.com/aaronsnig" target="_blank" rel="noreferrer" class="contact-link">
+			<a href="https://github.com/aaronsnig501" target="_blank" rel="noreferrer" class="contact-link">
 				<span class="contact-link-left">
 					<span class="contact-link-icon">gh</span>
 					<span
 						><span class="contact-link-label">github</span><span class="contact-link-sub"
-							>github.com/aaronsnig</span
+							>github.com/aaronsnig501</span
 						></span
 					>
 				</span>
