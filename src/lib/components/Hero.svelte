@@ -24,8 +24,7 @@
 		</div>
 		<div class="hero-cta hero-reveal">
 			<a href="#work" class="btn btn-primary">{t('hero.workCta')}</a>
-			<a href={asset('/aaron_sinnott_cv_ga.html')} class="btn btn-secondary">CV as Gaeilge 🇮🇪</a>
-			<a href={asset('/aaron_sinnott_cv.html')} class="btn btn-secondary">CV in English 🌐</a>
+			<a href={asset('/aaron_sinnott_cv.pdf')} class="btn btn-secondary">CV in English 🌐</a>
 		</div>
 	</div>
 	<div class="scroll-hint hero-reveal">
